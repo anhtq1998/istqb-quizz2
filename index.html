@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
+    </div>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+      <div id="translated-question" class="hide translated-text"></div>
+      <div id="translated-answers" class="hide translated-text"></div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="translate-btn" class="translate-btn btn hide">Dịch</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <!-- Confirm button shown after selecting answer(s) -->
+      <button id="confirm-btn" class="confirm-btn btn hide">Confirm</button>
+    </div>
+  </div>
+</body>
+
+</html>

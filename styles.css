@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  /* Allow vertical scrolling when content exceeds the container height */
+  max-height: 80vh;
+  /* keep container within viewport */
+  overflow-y: auto;
+  /* enable vertical scroll */
+  -webkit-overflow-scrolling: touch;
+  /* smooth scrolling on iOS */
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  /* Sửa đổi dòng này */
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct::after {
+  content: " ✓";
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  /* red background for wrong answers */
+  background-color: #e57373;
+  border-color: #d32f2f;
+  color: #000;
+}
+
+.translate-btn {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.start-btn,
+.next-btn {
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.translate-btn {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Selected answer visual state */
+.btn.selected {
+  background-color: #ff9800;
+  /* orange */
+  border-color: #e68900;
+  /* darker orange border */
+  color: #000;
+  /* black text for contrast */
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) inset;
+}
+
+/* Correct answer checkmark */
+.btn.correct {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+.btn.correct::after {
+  content: " ✓";
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* Disabled button state (after confirmation) */
+.btn[disabled],
+.btn[aria-disabled="true"] {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Custom scrollbar styling for the container */
+.container {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  /* gives some padding effect */
+}
