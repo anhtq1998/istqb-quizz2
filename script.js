@@ -12,6 +12,8 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const confirmButton = document.getElementById("confirm-btn");
 
 let availableQuestions, usedQuestions, currentQuestionIndex;
+let score = 0;
+let totalQuestions = 0;
 
 // Gắn sự kiện cho các nút
 startButton.addEventListener("click", startGame);
@@ -25,10 +27,17 @@ translateButton.addEventListener("click", toggleTranslation); // Gắn hàm bậ
 function startGame() {
   startButton.classList.add("hide"); // Ẩn nút Start
   document.querySelector(".logo-container").classList.add("hide"); // Ẩn logo
-  // Initialize question pools
+
+  // Hiển thị lại phần câu hỏi và câu trả lời
+  questionElement.classList.remove("hide");
+  answerButtonsElement.classList.remove("hide");
+
+  // Initialize question pools and score
   availableQuestions = [...questions]; // Create a copy of all questions
   usedQuestions = []; // Reset used questions array
   currentQuestionIndex = 0; // Đặt lại chỉ số câu hỏi
+  score = 0; // Đặt lại điểm số
+  totalQuestions = 0; // Đặt lại số câu hỏi đã trả lời
   questionContainerElement.classList.remove("hide"); // Hiển thị vùng chứa câu hỏi
   nextButton.classList.remove("hide"); // Hiển thị nút Next
   translateButton.classList.remove("hide"); // Hiển thị nút dịch
@@ -95,6 +104,14 @@ function resetState() {
   translatedAnswersElement.classList.add("hide");
   translatedAnswersElement.innerText = "";
 
+  // Xóa hộp kết quả cuối cùng nếu có
+  const resultBox = questionContainerElement.querySelector(
+    'div[style*="pre-line"]'
+  );
+  if (resultBox) {
+    questionContainerElement.removeChild(resultBox);
+  }
+
   // Xóa tất cả các nút trả lời cũ
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
@@ -128,6 +145,8 @@ function toggleSelectAnswer(e, multiCorrect) {
 
 // Evaluate selected answers when user clicks Confirm
 confirmButton.addEventListener("click", () => {
+  totalQuestions++; // Tăng số câu hỏi đã trả lời
+
   // Disable further selection by disabling the buttons (removing ability to click)
   Array.from(answerButtonsElement.children).forEach((b) => {
     b.disabled = true;
@@ -159,6 +178,12 @@ confirmButton.addEventListener("click", () => {
     selectedButtons.every(
       (b) => b.dataset.correct === "true" || b.dataset.correct === true
     );
+
+  // Tăng điểm nếu trả lời đúng
+  if (selectedIsExactlyCorrect) {
+    score++;
+  }
+
   setStatusClass(document.body, selectedIsExactlyCorrect);
 
   // After evaluation, hide confirm and show next/restart
@@ -166,7 +191,41 @@ confirmButton.addEventListener("click", () => {
   if (availableQuestions.length > 0) {
     nextButton.classList.remove("hide");
   } else {
-    startButton.innerText = "Restart";
+    // Ẩn phần câu hỏi và câu trả lời
+    questionElement.classList.add("hide");
+    answerButtonsElement.classList.add("hide");
+    translatedQuestionElement.classList.add("hide");
+    translatedAnswersElement.classList.add("hide");
+
+    // Hiển thị kết quả cuối cùng
+    const finalScore = Math.round((score / totalQuestions) * 100);
+    const resultMessage = `
+      🎯 Kết quả bài thi của bạn:
+      ✅ Số câu đúng: ${score}/${totalQuestions}
+      📊 Tỷ lệ đúng: ${finalScore}%
+      ${
+        finalScore >= 70
+          ? "🎉 Chúc mừng! Bạn đã vượt qua bài thi!"
+          : "💪 Cố gắng hơn vào lần sau nhé!"
+      }
+    `;
+
+    // Tạo và hiển thị hộp kết quả
+    const resultBox = document.createElement("div");
+    resultBox.style.backgroundColor = "#f8f9fa";
+    resultBox.style.padding = "20px";
+    resultBox.style.borderRadius = "10px";
+    resultBox.style.marginTop = "20px";
+    resultBox.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+    resultBox.style.whiteSpace = "pre-line";
+    resultBox.style.textAlign = "center";
+    resultBox.style.fontSize = "1.2em";
+    resultBox.textContent = resultMessage;
+
+    // Thêm hộp kết quả vào trước nút Start
+    questionContainerElement.appendChild(resultBox);
+
+    startButton.innerText = "Làm lại bài thi";
     startButton.classList.remove("hide");
     translateButton.classList.add("hide");
   }
