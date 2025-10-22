@@ -178,3 +178,13 @@ body.wrong {
   border: 2px solid transparent;
   /* gives some padding effect */
 }
+
+#example-selection {
+  width: 100%;
+  text-align: center !important;
+}
+
+#example-select {
+  height: 28px;
+  border-radius: 8px;
+}

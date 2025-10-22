@@ -31,6 +31,18 @@
       <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
     </div>
 
+    <div id="example-selection" class="example-controls">
+      <h2>Chọn Bộ Câu Hỏi:</h2>
+      <select id="example-select">
+        <option value="" disabled selected>-- Chọn Example --</option>
+        <option value="example1">Example 1 (40 câu)</option>
+        <option value="example1">Example 2 (40 câu)</option>
+        <option value="retry_incorrect">Làm lại câu đã sai (Lưu gần nhất)</option>
+        <!-- <option value="example2">Example 2 (Advanced)</option> -->
+      </select>
+      <button id="load-example-btn" class="btn">Tải Bộ Câu Hỏi</button>
+    </div>
+
     <div id="question-container" class="hide">
       <div id="question">Question</div>
       <div id="answer-buttons" class="btn-grid">
@@ -44,7 +56,7 @@
     </div>
 
     <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="start-btn" class="start-btn btn hide">Start</button>
       <button id="translate-btn" class="translate-btn btn hide">Dịch</button>
       <button id="next-btn" class="next-btn btn hide">Next</button>
       <button id="confirm-btn" class="confirm-btn btn hide">Confirm</button>
