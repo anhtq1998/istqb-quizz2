@@ -188,3 +188,9 @@ body.wrong {
   height: 28px;
   border-radius: 8px;
 }
+
+@media (max-width: 800px) {
+  #load-example-btn {
+    margin-top: 15px !important;
+  }
+}
