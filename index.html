@@ -2,21 +2,27 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
-  <title>Quiz App</title>
-  <!-- Google tag (gtag.js) -->
+  <title>Quiz App Custom</title>
+
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLS7B2YQFD"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-SLS7B2YQFD');
   </script>
+
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -24,6 +30,7 @@
     <div class="logo-container">
       <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
     </div>
+
     <div id="question-container" class="hide">
       <div id="question">Question</div>
       <div id="answer-buttons" class="btn-grid">
@@ -35,11 +42,11 @@
       <div id="translated-question" class="hide translated-text"></div>
       <div id="translated-answers" class="hide translated-text"></div>
     </div>
+
     <div class="controls">
       <button id="start-btn" class="start-btn btn">Start</button>
       <button id="translate-btn" class="translate-btn btn hide">Dịch</button>
       <button id="next-btn" class="next-btn btn hide">Next</button>
-      <!-- Confirm button shown after selecting answer(s) -->
       <button id="confirm-btn" class="confirm-btn btn hide">Confirm</button>
     </div>
   </div>
