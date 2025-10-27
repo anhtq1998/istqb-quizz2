@@ -330,7 +330,10 @@ function confirmAnswer() {
   if (availableQuestions.length > 0) {
     nextButton.classList.remove("hide");
   } else {
-    endQuiz();
+    // nextButton.classList.remove("hide");
+    setTimeout(() => {
+      endQuiz();
+    }, 3000);
   }
 }
 

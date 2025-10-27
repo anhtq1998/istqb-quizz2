@@ -65,29 +65,29 @@ export const questions = [
         translation: { vi: "z) khi người quản lý dự án yêu cầu" },
       },
       {
-        text: "a) v & w are true, x – z are false",
+        text: " v & w are true, x – z are false",
         correct: false,
-        translation: { vi: "a) v & w đúng, x – z sai" },
+        translation: { vi: " v & w đúng, x – z sai" },
       },
       {
-        text: "b) w, x & y are true, v & z are false",
+        text: " w, x & y are true, v & z are false",
         correct: false,
-        translation: { vi: "b) w, x & y đúng, v & z sai" },
+        translation: { vi: " w, x & y đúng, v & z sai" },
       },
       {
-        text: "c) w & y are true, v, x & z are false",
+        text: " w & y are true, v, x & z are false",
         correct: true,
-        translation: { vi: "c) w & y đúng, v, x & z sai" },
+        translation: { vi: " w & y đúng, v, x & z sai" },
       },
       {
-        text: "d) w is true, v, x y and z are false",
+        text: " w is true, v, x y and z are false",
         correct: false,
-        translation: { vi: "d) w đúng, v, x y và z sai" },
+        translation: { vi: " w đúng, v, x y và z sai" },
       },
       {
-        text: "e) all of the above are true",
+        text: " all of the above are true",
         correct: false,
-        translation: { vi: "e) tất cả những điều trên đều đúng" },
+        translation: { vi: " tất cả những điều trên đều đúng" },
       },
     ],
   },
@@ -99,29 +99,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) test items",
+        text: " test items",
         correct: false,
-        translation: { vi: "a) các mục kiểm thử" },
+        translation: { vi: " các mục kiểm thử" },
       },
       {
-        text: "b) test deliverables",
+        text: " test deliverables",
         correct: false,
-        translation: { vi: "b) các sản phẩm bàn giao kiểm thử" },
+        translation: { vi: " các sản phẩm bàn giao kiểm thử" },
       },
       {
-        text: "c) test tasks",
+        text: " test tasks",
         correct: false,
-        translation: { vi: "c) các nhiệm vụ kiểm thử" },
+        translation: { vi: " các nhiệm vụ kiểm thử" },
       },
       {
-        text: "d) test environment",
+        text: " test environment",
         correct: false,
-        translation: { vi: "d) môi trường kiểm thử" },
+        translation: { vi: " môi trường kiểm thử" },
       },
       {
-        text: "e) test specification",
+        text: " test specification",
         correct: true,
-        translation: { vi: "e) đặc tả kiểm thử" },
+        translation: { vi: " đặc tả kiểm thử" },
       },
     ],
   },
@@ -132,30 +132,30 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) all the planned tests have been run",
+        text: " all the planned tests have been run",
         correct: false,
-        translation: { vi: "a) tất cả các kiểm thử đã được chạy" },
+        translation: { vi: " tất cả các kiểm thử đã được chạy" },
       },
       {
-        text: "b) time has run out",
+        text: " time has run out",
         correct: false,
-        translation: { vi: "b) hết thời gian" },
+        translation: { vi: " hết thời gian" },
       },
       {
-        text: "c) all faults have been fixed correctly",
+        text: " all faults have been fixed correctly",
         correct: false,
-        translation: { vi: "c) tất cả các lỗi đã được sửa đúng" },
+        translation: { vi: " tất cả các lỗi đã được sửa đúng" },
       },
       {
-        text: "d) both a) and c)",
+        text: " both a. and c.",
         correct: false,
-        translation: { vi: "d) cả a) và c)" },
+        translation: { vi: " cả a. và c." },
       },
       {
-        text: "e) it depends on the risks for the system being tested",
+        text: " it depends on the risks for the system being tested",
         correct: true,
         translation: {
-          vi: "e) điều đó phụ thuộc vào rủi ro của hệ thống đang được kiểm thử",
+          vi: " điều đó phụ thuộc vào rủi ro của hệ thống đang được kiểm thử",
         },
       },
     ],
@@ -168,29 +168,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) 1000, 5000, 99999",
+        text: " 1000, 5000, 99999",
         correct: false,
-        translation: { vi: "a) 1000, 5000, 99999" },
+        translation: { vi: " 1000, 5000, 99999" },
       },
       {
-        text: "b) 9999, 50000, 100000",
+        text: " 9999, 50000, 100000",
         correct: false,
-        translation: { vi: "b) 9999, 50000, 100000" },
+        translation: { vi: " 9999, 50000, 100000" },
       },
       {
-        text: "c) 10000, 50000, 99999",
+        text: " 10000, 50000, 99999",
         correct: true,
-        translation: { vi: "c) 10000, 50000, 99999" },
+        translation: { vi: " 10000, 50000, 99999" },
       },
       {
-        text: "d) 10000, 99999",
+        text: " 10000, 99999",
         correct: false,
-        translation: { vi: "d) 10000, 99999" },
+        translation: { vi: " 10000, 99999" },
       },
       {
-        text: "e) 9999, 10000, 50000, 99999, 10000",
+        text: " 9999, 10000, 50000, 99999, 10000",
         correct: false,
-        translation: { vi: "e) 9999, 10000, 50000, 99999, 10000" },
+        translation: { vi: " 9999, 10000, 50000, 99999, 10000" },
       },
     ],
   },
@@ -202,29 +202,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) i, iii & iv are true. Ii & v are false",
+        text: " i, iii & iv are true. Ii & v are false",
         correct: true,
-        translation: { vi: "a) i, iii & iv đúng. Ii & v sai" },
+        translation: { vi: " i, iii & iv đúng. Ii & v sai" },
       },
       {
-        text: "b) iii is true, I, ii, iv & v are false",
+        text: " iii is true, I, ii, iv & v are false",
         correct: false,
-        translation: { vi: "b) iii đúng, I, ii, iv & v sai" },
+        translation: { vi: " iii đúng, I, ii, iv & v sai" },
       },
       {
-        text: "c) iii & iv are true. i, ii & v are false",
+        text: " iii & iv are true. i, ii & v are false",
         correct: false,
-        translation: { vi: "c) iii & iv đúng. i, ii & v sai" },
+        translation: { vi: " iii & iv đúng. i, ii & v sai" },
       },
       {
-        text: "d) i, iii, iv & v are true, ii us false",
+        text: " i, iii, iv & v are true, ii us false",
         correct: false,
-        translation: { vi: "d) i, iii, iv & v đúng, ii sai" },
+        translation: { vi: " i, iii, iv & v đúng, ii sai" },
       },
       {
-        text: "e) i & iii are true, ii, iv & v are false",
+        text: " i & iii are true, ii, iv & v are false",
         correct: false,
-        translation: { vi: "e) i & iii đúng, ii, iv & v sai" },
+        translation: { vi: " i & iii đúng, ii, iv & v sai" },
       },
     ],
   },
@@ -235,37 +235,37 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) testing to see where the system does not function properly",
+        text: " testing to see where the system does not function properly",
         correct: false,
         translation: {
-          vi: "a) kiểm thử để xem hệ thống không hoạt động đúng cách ở đâu",
+          vi: " kiểm thử để xem hệ thống không hoạt động đúng cách ở đâu",
         },
       },
       {
-        text: "b) testing quality attributes of the system including performance and usability",
+        text: " testing quality attributes of the system including performance and usability",
         correct: true,
         translation: {
-          vi: "b) kiểm thử các thuộc tính chất lượng của hệ thống bao gồm hiệu suất và khả năng sử dụng",
+          vi: " kiểm thử các thuộc tính chất lượng của hệ thống bao gồm hiệu suất và khả năng sử dụng",
         },
       },
       {
-        text: "c) testing a system feature using only the software required for that action",
+        text: " testing a system feature using only the software required for that action",
         correct: false,
         translation: {
-          vi: "c) kiểm thử một tính năng hệ thống chỉ sử dụng phần mềm cần thiết cho hành động đó",
+          vi: " kiểm thử một tính năng hệ thống chỉ sử dụng phần mềm cần thiết cho hành động đó",
         },
       },
       {
-        text: "d) testing a system feature using only the software required for that function",
+        text: " testing a system feature using only the software required for that function",
         correct: false,
         translation: {
-          vi: "d) kiểm thử một tính năng hệ thống chỉ sử dụng phần mềm cần thiết cho chức năng đó",
+          vi: " kiểm thử một tính năng hệ thống chỉ sử dụng phần mềm cần thiết cho chức năng đó",
         },
       },
       {
-        text: "e) testing for functions that should not exist",
+        text: " testing for functions that should not exist",
         correct: false,
-        translation: { vi: "e) kiểm thử các chức năng không nên tồn tại" },
+        translation: { vi: " kiểm thử các chức năng không nên tồn tại" },
       },
     ],
   },
@@ -276,29 +276,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) status accounting of configuration items",
+        text: " status accounting of configuration items",
         correct: false,
-        translation: { vi: "a) kế toán trạng thái của các mục cấu hình" },
+        translation: { vi: " kế toán trạng thái của các mục cấu hình" },
       },
       {
-        text: "b) auditing conformance to ISO9001",
+        text: " auditing conformance to ISO9001",
         correct: true,
-        translation: { vi: "b) kiểm toán sự tuân thủ ISO9001" },
+        translation: { vi: " kiểm toán sự tuân thủ ISO9001" },
       },
       {
-        text: "c) identification of test versions",
+        text: " identification of test versions",
         correct: false,
-        translation: { vi: "c) nhận dạng các phiên bản kiểm thử" },
+        translation: { vi: " nhận dạng các phiên bản kiểm thử" },
       },
       {
-        text: "d) record of changes to documentation over time",
+        text: " record of changes to documentation over time",
         correct: false,
-        translation: { vi: "d) ghi lại các thay đổi tài liệu theo thời gian" },
+        translation: { vi: " ghi lại các thay đổi tài liệu theo thời gian" },
       },
       {
-        text: "e) controlled library access",
+        text: " controlled library access",
         correct: false,
-        translation: { vi: "e) kiểm soát quyền truy cập thư viện" },
+        translation: { vi: " kiểm soát quyền truy cập thư viện" },
       },
     ],
   },
@@ -310,38 +310,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) to ensure that all of the small modules are tested adequately",
+        text: " to ensure that all of the small modules are tested adequately",
         correct: false,
         translation: {
-          vi: "a) để đảm bảo rằng tất cả các mô-đun nhỏ được kiểm thử đầy đủ",
+          vi: " để đảm bảo rằng tất cả các mô-đun nhỏ được kiểm thử đầy đủ",
         },
       },
       {
-        text: "b) to ensure that the system interfaces to other systems and networks",
+        text: " to ensure that the system interfaces to other systems and networks",
         correct: false,
         translation: {
-          vi: "b) để đảm bảo rằng hệ thống giao tiếp với các hệ thống và mạng khác",
+          vi: " để đảm bảo rằng hệ thống giao tiếp với các hệ thống và mạng khác",
         },
       },
       {
-        text: "c) to specify which modules to combine when and how many at once",
+        text: " to specify which modules to combine when and how many at once",
         correct: true,
         translation: {
-          vi: "c) để chỉ rõ các mô-đun nào được kết hợp khi nào và bao nhiêu cùng một lúc",
+          vi: " để chỉ rõ các mô-đun nào được kết hợp khi nào và bao nhiêu cùng một lúc",
         },
       },
       {
-        text: "d) to ensure that the integration testing can be performed by a small team",
+        text: " to ensure that the integration testing can be performed by a small team",
         correct: false,
         translation: {
-          vi: "d) để đảm bảo rằng kiểm thử tích hợp có thể được thực hiện bởi một nhóm nhỏ",
+          vi: " để đảm bảo rằng kiểm thử tích hợp có thể được thực hiện bởi một nhóm nhỏ",
         },
       },
       {
-        text: "e) to specify how the software should be divided into modules",
+        text: " to specify how the software should be divided into modules",
         correct: false,
         translation: {
-          vi: "e) để chỉ rõ phần mềm nên được chia thành các mô-đun như thế nào",
+          vi: " để chỉ rõ phần mềm nên được chia thành các mô-đun như thế nào",
         },
       },
     ],
@@ -353,37 +353,37 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) to know when a specific test has finished its execution",
+        text: " to know when a specific test has finished its execution",
         correct: false,
         translation: {
-          vi: "a) để biết khi nào một kiểm thử cụ thể đã hoàn thành việc thực thi",
+          vi: " để biết khi nào một kiểm thử cụ thể đã hoàn thành việc thực thi",
         },
       },
       {
-        text: "b) to ensure that the test case specification is complete",
+        text: " to ensure that the test case specification is complete",
         correct: false,
         translation: {
-          vi: "b) để đảm bảo rằng đặc tả trường hợp kiểm thử là đầy đủ",
+          vi: " để đảm bảo rằng đặc tả trường hợp kiểm thử là đầy đủ",
         },
       },
       {
-        text: "c) to set the criteria used in generating test inputs",
+        text: " to set the criteria used in generating test inputs",
         correct: false,
         translation: {
-          vi: "c) để đặt các tiêu chí được sử dụng trong việc tạo đầu vào kiểm thử",
+          vi: " để đặt các tiêu chí được sử dụng trong việc tạo đầu vào kiểm thử",
         },
       },
       {
-        text: "d) to know when test planning is complete",
+        text: " to know when test planning is complete",
         correct: false,
         translation: {
-          vi: "d) để biết khi nào việc lập kế hoạch kiểm thử hoàn thành",
+          vi: " để biết khi nào việc lập kế hoạch kiểm thử hoàn thành",
         },
       },
       {
-        text: "e) to plan when to stop testing",
+        text: " to plan when to stop testing",
         correct: true,
-        translation: { vi: "e) để lập kế hoạch khi nào dừng kiểm thử" },
+        translation: { vi: " để lập kế hoạch khi nào dừng kiểm thử" },
       },
     ],
   },
@@ -395,29 +395,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) ii and v are true, I, iii and iv are false",
+        text: " ii and v are true, I, iii and iv are false",
         correct: false,
-        translation: { vi: "a) ii và v đúng, I, iii và iv sai" },
+        translation: { vi: " ii và v đúng, I, iii và iv sai" },
       },
       {
-        text: "b) i and v are true, ii, iii and iv are false",
+        text: " i and v are true, ii, iii and iv are false",
         correct: true,
-        translation: { vi: "b) i và v đúng, ii, iii và iv sai" },
+        translation: { vi: " i và v đúng, ii, iii và iv sai" },
       },
       {
-        text: "c) i, iv and v are true, ii and iii are false",
+        text: " i, iv and v are true, ii and iii are false",
         correct: false,
-        translation: { vi: "c) i, iv và v đúng, ii và iii sai" },
+        translation: { vi: " i, iv và v đúng, ii và iii sai" },
       },
       {
-        text: "d) i and ii are true, iii, iv and v are false",
+        text: " i and ii are true, iii, iv and v are false",
         correct: false,
-        translation: { vi: "d) i và ii đúng, iii, iv và v sai" },
+        translation: { vi: " i và ii đúng, iii, iv và v sai" },
       },
       {
-        text: "e) i is true, ii, iii, iv and v are false",
+        text: " i is true, ii, iii, iv and v are false",
         correct: false,
-        translation: { vi: "e) i đúng, ii, iii, iv và v sai" },
+        translation: { vi: " i đúng, ii, iii, iv và v sai" },
       },
     ],
   },
@@ -429,38 +429,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) 1 test for statement coverage, 3 for branch coverage",
+        text: " 1 test for statement coverage, 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "a) 1 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "b) 1 test for statement coverage, 2 for branch coverage",
+        text: " 1 test for statement coverage, 2 for branch coverage",
         correct: true,
         translation: {
-          vi: "b) 1 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "c) 1 test for statement coverage, 1 for branch coverage",
+        text: " 1 test for statement coverage, 1 for branch coverage",
         correct: false,
         translation: {
-          vi: "c) 1 kiểm thử cho độ bao phủ câu lệnh, 1 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 1 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "d) 2 tests for statement coverage, 3 for branch coverage",
+        text: " 2 tests for statement coverage, 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "d) 2 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "e) 2 tests for statement coverage, 2 for branch coverage",
+        text: " 2 tests for statement coverage, 2 for branch coverage",
         correct: false,
         translation: {
-          vi: "e) 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
     ],
@@ -473,38 +473,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) 1 test for statement coverage, 1 for branch coverage",
+        text: " 1 test for statement coverage, 1 for branch coverage",
         correct: false,
         translation: {
-          vi: "a) 1 kiểm thử cho độ bao phủ câu lệnh, 1 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 1 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "b) 1 test for statement coverage, 2 for branch coverage",
+        text: " 1 test for statement coverage, 2 for branch coverage",
         correct: true,
         translation: {
-          vi: "b) 1 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "c) 1 test for statement coverage. 3 for branch coverage",
+        text: " 1 test for statement coverage. 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "c) 1 kiểm thử cho độ bao phủ câu lệnh. 3 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh. 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "d) 2 tests for statement coverage, 2 for branch coverage",
+        text: " 2 tests for statement coverage, 2 for branch coverage",
         correct: false,
         translation: {
-          vi: "d) 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "e) 2 tests for statement coverage, 3 for branch coverage",
+        text: " 2 tests for statement coverage, 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "e) 2 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
         },
       },
     ],
@@ -517,38 +517,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) 1 test for statement coverage, 3 for branch coverage",
+        text: " 1 test for statement coverage, 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "a) 1 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
+          vi: " 1 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "b) 2 tests for statement coverage, 2 for branch coverage",
+        text: " 2 tests for statement coverage, 2 for branch coverage",
         correct: true,
         translation: {
-          vi: "b) 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "c) 2 tests for statement coverage. 3 for branch coverage",
+        text: " 2 tests for statement coverage. 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "c) 2 kiểm thử cho độ bao phủ câu lệnh. 3 cho độ bao phủ nhánh",
+          vi: " 2 kiểm thử cho độ bao phủ câu lệnh. 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "d) 3 tests for statement coverage, 3 for branch coverage",
+        text: " 3 tests for statement coverage, 3 for branch coverage",
         correct: false,
         translation: {
-          vi: "d) 3 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
+          vi: " 3 kiểm thử cho độ bao phủ câu lệnh, 3 cho độ bao phủ nhánh",
         },
       },
       {
-        text: "e) 3 tests for statement coverage, 2 for branch coverage",
+        text: " 3 tests for statement coverage, 2 for branch coverage",
         correct: false,
         translation: {
-          vi: "e) 3 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
+          vi: " 3 kiểm thử cho độ bao phủ câu lệnh, 2 cho độ bao phủ nhánh",
         },
       },
     ],
@@ -561,29 +561,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) SC = 1 and DC = 1",
+        text: " SC = 1 and DC = 1",
         correct: false,
-        translation: { vi: "a) SC = 1 và DC = 1" },
+        translation: { vi: " SC = 1 và DC = 1" },
       },
       {
-        text: "b) SC = 1 and DC = 2",
+        text: " SC = 1 and DC = 2",
         correct: false,
-        translation: { vi: "b) SC = 1 và DC = 2" },
+        translation: { vi: " SC = 1 và DC = 2" },
       },
       {
-        text: "c) SC = 1 and DC = 3",
+        text: " SC = 1 and DC = 3",
         correct: false,
-        translation: { vi: "c) SC = 1 và DC = 3" },
+        translation: { vi: " SC = 1 và DC = 3" },
       },
       {
-        text: "d) SC = 2 and DC = 2",
+        text: " SC = 2 and DC = 2",
         correct: false,
-        translation: { vi: "d) SC = 2 và DC = 2" },
+        translation: { vi: " SC = 2 và DC = 2" },
       },
       {
-        text: "e) SC = 2 and DC = 3",
+        text: " SC = 2 and DC = 3",
         correct: true,
-        translation: { vi: "e) SC = 2 và DC = 3" },
+        translation: { vi: " SC = 2 và DC = 3" },
       },
     ],
   },
@@ -594,31 +594,31 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Attend a tool exhibition",
+        text: " Attend a tool exhibition",
         correct: false,
-        translation: { vi: "a) Tham dự một triển lãm công cụ" },
+        translation: { vi: " Tham dự một triển lãm công cụ" },
       },
       {
-        text: "b) Invite a vendor to give a demo",
+        text: " Invite a vendor to give a demo",
         correct: false,
-        translation: { vi: "b) Mời một nhà cung cấp trình diễn" },
+        translation: { vi: " Mời một nhà cung cấp trình diễn" },
       },
       {
-        text: "c) Analyse your needs and requirements",
+        text: " Analyse your needs and requirements",
         correct: true,
-        translation: { vi: "c) Phân tích nhu cầu và yêu cầu của bạn" },
+        translation: { vi: " Phân tích nhu cầu và yêu cầu của bạn" },
       },
       {
-        text: "d) Find out what your budget would be for the tool",
+        text: " Find out what your budget would be for the tool",
         correct: false,
         translation: {
-          vi: "d) Tìm hiểu ngân sách của bạn cho công cụ đó là bao nhiêu",
+          vi: " Tìm hiểu ngân sách của bạn cho công cụ đó là bao nhiêu",
         },
       },
       {
-        text: "e) Search the internet",
+        text: " Search the internet",
         correct: false,
-        translation: { vi: "e) Tìm kiếm trên internet" },
+        translation: { vi: " Tìm kiếm trên internet" },
       },
     ],
   },
@@ -630,36 +630,36 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) A small team to establish the best way to use the tool",
+        text: " A small team to establish the best way to use the tool",
         correct: false,
         translation: {
-          vi: "a) Một nhóm nhỏ để thiết lập cách tốt nhất để sử dụng công cụ",
+          vi: " Một nhóm nhỏ để thiết lập cách tốt nhất để sử dụng công cụ",
         },
       },
       {
-        text: "b) Everyone who may eventually have some use for the tool",
+        text: " Everyone who may eventually have some use for the tool",
         correct: true,
         translation: {
-          vi: "b) Tất cả mọi người có thể cuối cùng có một số công dụng cho công cụ",
+          vi: " Tất cả mọi người có thể cuối cùng có một số công dụng cho công cụ",
         },
       },
       {
-        text: "c) The independent testing team",
+        text: " The independent testing team",
         correct: false,
-        translation: { vi: "c) Nhóm kiểm thử độc lập" },
+        translation: { vi: " Nhóm kiểm thử độc lập" },
       },
       {
-        text: "d) The managers to see what projects it should be used in",
+        text: " The managers to see what projects it should be used in",
         correct: false,
         translation: {
-          vi: "d) Các nhà quản lý để xem nó nên được sử dụng trong dự án nào",
+          vi: " Các nhà quản lý để xem nó nên được sử dụng trong dự án nào",
         },
       },
       {
-        text: "e) The vendor contractor to write the initial scripts",
+        text: " The vendor contractor to write the initial scripts",
         correct: false,
         translation: {
-          vi: "e) Nhà thầu cung cấp để viết các tập lệnh ban đầu",
+          vi: " Nhà thầu cung cấp để viết các tập lệnh ban đầu",
         },
       },
     ],
@@ -671,35 +671,35 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) The use of a variable before it has been defined",
+        text: " The use of a variable before it has been defined",
         correct: false,
         translation: {
-          vi: "a) Việc sử dụng một biến trước khi nó được định nghĩa",
+          vi: " Việc sử dụng một biến trước khi nó được định nghĩa",
         },
       },
       {
-        text: "b) Unreachable (“dead”) code",
+        text: " Unreachable (“dead”) code",
         correct: false,
-        translation: { vi: "b) Mã không thể truy cập (“mã chết”)" },
+        translation: { vi: " Mã không thể truy cập (“mã chết”)" },
       },
       {
-        text: "c) Whether the value stored in a variable is correct",
+        text: " Whether the value stored in a variable is correct",
         correct: true,
         translation: {
-          vi: "c) Liệu giá trị được lưu trữ trong một biến có đúng hay không",
+          vi: " Liệu giá trị được lưu trữ trong một biến có đúng hay không",
         },
       },
       {
-        text: "d) The re-definition of a variable before it has been used",
+        text: " The re-definition of a variable before it has been used",
         correct: false,
         translation: {
-          vi: "d) Việc định nghĩa lại một biến trước khi nó được sử dụng",
+          vi: " Việc định nghĩa lại một biến trước khi nó được sử dụng",
         },
       },
       {
-        text: "e) Array bound violations",
+        text: " Array bound violations",
         correct: false,
-        translation: { vi: "e) Vi phạm giới hạn mảng" },
+        translation: { vi: " Vi phạm giới hạn mảng" },
       },
     ],
   },
@@ -710,25 +710,25 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Equivalence partitioning",
+        text: " Equivalence partitioning",
         correct: false,
-        translation: { vi: "a) Phân vùng tương đương" },
+        translation: { vi: " Phân vùng tương đương" },
       },
       {
-        text: "b) State transition testing",
+        text: " State transition testing",
         correct: false,
-        translation: { vi: "b) Kiểm thử chuyển trạng thái" },
+        translation: { vi: " Kiểm thử chuyển trạng thái" },
       },
-      { text: "c) LCSAJ", correct: true, translation: { vi: "c) LCSAJ" } },
+      { text: " LCSAJ", correct: true, translation: { vi: " LCSAJ" } },
       {
-        text: "d) Syntax testing",
+        text: " Syntax testing",
         correct: false,
-        translation: { vi: "d) Kiểm thử cú pháp" },
+        translation: { vi: " Kiểm thử cú pháp" },
       },
       {
-        text: "e) Boundary value analysis",
+        text: " Boundary value analysis",
         correct: false,
-        translation: { vi: "e) Phân tích giá trị biên" },
+        translation: { vi: " Phân tích giá trị biên" },
       },
     ],
   },
@@ -739,36 +739,36 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Performed by customers at their own site",
+        text: " Performed by customers at their own site",
         correct: true,
         translation: {
-          vi: "a) Được thực hiện bởi khách hàng tại địa điểm của họ",
+          vi: " Được thực hiện bởi khách hàng tại địa điểm của họ",
         },
       },
       {
-        text: "b) Performed by customers at their software developer’s site",
+        text: " Performed by customers at their software developer’s site",
         correct: false,
         translation: {
-          vi: "b) Được thực hiện bởi khách hàng tại địa điểm của nhà phát triển phần mềm",
+          vi: " Được thực hiện bởi khách hàng tại địa điểm của nhà phát triển phần mềm",
         },
       },
       {
-        text: "c) Performed by an independent test team",
+        text: " Performed by an independent test team",
         correct: false,
-        translation: { vi: "c) Được thực hiện bởi một nhóm kiểm thử độc lập" },
+        translation: { vi: " Được thực hiện bởi một nhóm kiểm thử độc lập" },
       },
       {
-        text: "d) Useful to test bespoke software",
+        text: " Useful to test bespoke software",
         correct: false,
         translation: {
-          vi: "d) Hữu ích để kiểm thử phần mềm được thiết kế riêng",
+          vi: " Hữu ích để kiểm thử phần mềm được thiết kế riêng",
         },
       },
       {
-        text: "e) Performed as early as possible in the lifecycle",
+        text: " Performed as early as possible in the lifecycle",
         correct: false,
         translation: {
-          vi: "e) Được thực hiện càng sớm càng tốt trong vòng đời",
+          vi: " Được thực hiện càng sớm càng tốt trong vòng đời",
         },
       },
     ],
@@ -781,38 +781,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) developers would typically use i, iv and vi; test team ii, iii and v",
+        text: " developers would typically use i, iv and vi; test team ii, iii and v",
         correct: false,
         translation: {
-          vi: "a) nhà phát triển thường sử dụng i, iv và vi; nhóm kiểm thử ii, iii và v",
+          vi: " nhà phát triển thường sử dụng i, iv và vi; nhóm kiểm thử ii, iii và v",
         },
       },
       {
-        text: "b) developers would typically use i and iv; test team ii, iii, v and vi",
+        text: " developers would typically use i and iv; test team ii, iii, v and vi",
         correct: true,
         translation: {
-          vi: "b) nhà phát triển thường sử dụng i và iv; nhóm kiểm thử ii, iii, v và vi",
+          vi: " nhà phát triển thường sử dụng i và iv; nhóm kiểm thử ii, iii, v và vi",
         },
       },
       {
-        text: "c) developers would typically use i, ii, iii and iv; test team v and vi",
+        text: " developers would typically use i, ii, iii and iv; test team v and vi",
         correct: false,
         translation: {
-          vi: "c) nhà phát triển thường sử dụng i, ii, iii và iv; nhóm kiểm thử v và vi",
+          vi: " nhà phát triển thường sử dụng i, ii, iii và iv; nhóm kiểm thử v và vi",
         },
       },
       {
-        text: "d) developers would typically use ii, iv and vi; test team I, ii and v",
+        text: " developers would typically use ii, iv and vi; test team I, ii and v",
         correct: false,
         translation: {
-          vi: "d) nhà phát triển thường sử dụng ii, iv và vi; nhóm kiểm thử I, ii và v",
+          vi: " nhà phát triển thường sử dụng ii, iv và vi; nhóm kiểm thử I, ii và v",
         },
       },
       {
-        text: "e) developers would typically use i, iii, iv and v; test team ii and vi",
+        text: " developers would typically use i, iii, iv and v; test team ii and vi",
         correct: false,
         translation: {
-          vi: "e) nhà phát triển thường sử dụng i, iii, iv và v; nhóm kiểm thử ii và vi",
+          vi: " nhà phát triển thường sử dụng i, iii, iv và v; nhóm kiểm thử ii và vi",
         },
       },
     ],
@@ -824,31 +824,31 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) finding faults in the system",
+        text: " finding faults in the system",
         correct: false,
-        translation: { vi: "a) tìm kiếm lỗi trong hệ thống" },
+        translation: { vi: " tìm kiếm lỗi trong hệ thống" },
       },
       {
-        text: "b) ensuring that the system is acceptable to all users",
+        text: " ensuring that the system is acceptable to all users",
         correct: false,
         translation: {
-          vi: "b) đảm bảo rằng hệ thống được chấp nhận bởi tất cả người dùng",
+          vi: " đảm bảo rằng hệ thống được chấp nhận bởi tất cả người dùng",
         },
       },
       {
-        text: "c) testing the system with other systems",
+        text: " testing the system with other systems",
         correct: false,
-        translation: { vi: "c) kiểm thử hệ thống với các hệ thống khác" },
+        translation: { vi: " kiểm thử hệ thống với các hệ thống khác" },
       },
       {
-        text: "d) testing for a business perspective",
+        text: " testing for a business perspective",
         correct: true,
-        translation: { vi: "d) kiểm thử từ góc độ kinh doanh" },
+        translation: { vi: " kiểm thử từ góc độ kinh doanh" },
       },
       {
-        text: "e) testing by an independent test team",
+        text: " testing by an independent test team",
         correct: false,
-        translation: { vi: "e) kiểm thử bởi một nhóm kiểm thử độc lập" },
+        translation: { vi: " kiểm thử bởi một nhóm kiểm thử độc lập" },
       },
     ],
   },
@@ -860,38 +860,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) black box design techniques all have an associated measurement technique",
+        text: " black box design techniques all have an associated measurement technique",
         correct: true,
         translation: {
-          vi: "a) tất cả các kỹ thuật thiết kế hộp đen đều có kỹ thuật đo lường liên quan",
+          vi: " tất cả các kỹ thuật thiết kế hộp đen đều có kỹ thuật đo lường liên quan",
         },
       },
       {
-        text: "b) white box design techniques all have an associated measurement technique",
+        text: " white box design techniques all have an associated measurement technique",
         correct: false,
         translation: {
-          vi: "b) tất cả các kỹ thuật thiết kế hộp trắng đều có kỹ thuật đo lường liên quan",
+          vi: " tất cả các kỹ thuật thiết kế hộp trắng đều có kỹ thuật đo lường liên quan",
         },
       },
       {
-        text: "c) cyclomatic complexity is not a test measurement technique",
+        text: " cyclomatic complexity is not a test measurement technique",
         correct: false,
         translation: {
-          vi: "c) độ phức tạp cyclomatic không phải là kỹ thuật đo lường kiểm thử",
+          vi: " độ phức tạp cyclomatic không phải là kỹ thuật đo lường kiểm thử",
         },
       },
       {
-        text: "d) black box measurement techniques all have an associated test design technique",
+        text: " black box measurement techniques all have an associated test design technique",
         correct: false,
         translation: {
-          vi: "d) tất cả các kỹ thuật đo lường hộp đen đều có kỹ thuật thiết kế kiểm thử liên quan",
+          vi: " tất cả các kỹ thuật đo lường hộp đen đều có kỹ thuật thiết kế kiểm thử liên quan",
         },
       },
       {
-        text: "e) white box measurement techniques all have an associated test design technique",
+        text: " white box measurement techniques all have an associated test design technique",
         correct: false,
         translation: {
-          vi: "e) tất cả các kỹ thuật đo lường hộp trắng đều có kỹ thuật thiết kế kiểm thử liên quan",
+          vi: " tất cả các kỹ thuật đo lường hộp trắng đều có kỹ thuật thiết kế kiểm thử liên quan",
         },
       },
     ],
@@ -903,36 +903,36 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) inspection is the most formal review process",
+        text: " inspection is the most formal review process",
         correct: false,
-        translation: { vi: "a) kiểm tra là quy trình xem xét chính thức nhất" },
+        translation: { vi: " kiểm tra là quy trình xem xét chính thức nhất" },
       },
       {
-        text: "b) inspections should be led by a trained leader",
+        text: " inspections should be led by a trained leader",
         correct: false,
         translation: {
-          vi: "b) việc kiểm tra nên được dẫn dắt bởi một trưởng nhóm được đào tạo",
+          vi: " việc kiểm tra nên được dẫn dắt bởi một trưởng nhóm được đào tạo",
         },
       },
       {
-        text: "c) managers can perform inspections on management documents",
+        text: " managers can perform inspections on management documents",
         correct: false,
         translation: {
-          vi: "c) quản lý có thể thực hiện kiểm tra các tài liệu quản lý",
+          vi: " quản lý có thể thực hiện kiểm tra các tài liệu quản lý",
         },
       },
       {
-        text: "d) inspection is appropriate even when there are no written documents",
+        text: " inspection is appropriate even when there are no written documents",
         correct: true,
         translation: {
-          vi: "d) kiểm tra phù hợp ngay cả khi không có tài liệu viết",
+          vi: " kiểm tra phù hợp ngay cả khi không có tài liệu viết",
         },
       },
       {
-        text: "e) inspection compares documents with predecessor (source) documents",
+        text: " inspection compares documents with predecessor (source) documents",
         correct: false,
         translation: {
-          vi: "e) kiểm tra so sánh các tài liệu với các tài liệu tiền nhiệm (nguồn)",
+          vi: " kiểm tra so sánh các tài liệu với các tài liệu tiền nhiệm (nguồn)",
         },
       },
     ],
@@ -945,31 +945,31 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) generating expected outputs",
+        text: " generating expected outputs",
         correct: true,
-        translation: { vi: "a) tạo đầu ra mong đợi" },
+        translation: { vi: " tạo đầu ra mong đợi" },
       },
       {
-        text: "b) replaying inputs according to a programmed script",
+        text: " replaying inputs according to a programmed script",
         correct: false,
         translation: {
-          vi: "b) phát lại đầu vào theo một tập lệnh đã được lập trình",
+          vi: " phát lại đầu vào theo một tập lệnh đã được lập trình",
         },
       },
       {
-        text: "c) comparison of expected outcomes with actual outcomes",
+        text: " comparison of expected outcomes with actual outcomes",
         correct: false,
-        translation: { vi: "c) so sánh kết quả mong đợi với kết quả thực tế" },
+        translation: { vi: " so sánh kết quả mong đợi với kết quả thực tế" },
       },
       {
-        text: "d) recording test inputs",
+        text: " recording test inputs",
         correct: false,
-        translation: { vi: "d) ghi lại đầu vào kiểm thử" },
+        translation: { vi: " ghi lại đầu vào kiểm thử" },
       },
       {
-        text: "e) reading test values from a data file",
+        text: " reading test values from a data file",
         correct: false,
-        translation: { vi: "e) đọc các giá trị kiểm thử từ một tệp dữ liệu" },
+        translation: { vi: " đọc các giá trị kiểm thử từ một tệp dữ liệu" },
       },
     ],
   },
@@ -980,38 +980,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) re-testing is running a test again; regression testing looks for unexpected side effects",
+        text: " re-testing is running a test again; regression testing looks for unexpected side effects",
         correct: true,
         translation: {
-          vi: "a) kiểm thử lại là chạy lại một kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn",
+          vi: " kiểm thử lại là chạy lại một kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn",
         },
       },
       {
-        text: "b) re-testing looks for unexpected side effects; regression testing is repeating those tests",
+        text: " re-testing looks for unexpected side effects; regression testing is repeating those tests",
         correct: false,
         translation: {
-          vi: "b) kiểm thử lại tìm kiếm các tác dụng phụ không mong muốn; kiểm thử hồi quy là lặp lại các kiểm thử đó",
+          vi: " kiểm thử lại tìm kiếm các tác dụng phụ không mong muốn; kiểm thử hồi quy là lặp lại các kiểm thử đó",
         },
       },
       {
-        text: "c) re-testing is done after faults are fixed; regression testing is done earlier",
+        text: " re-testing is done after faults are fixed; regression testing is done earlier",
         correct: false,
         translation: {
-          vi: "c) kiểm thử lại được thực hiện sau khi lỗi được sửa; kiểm thử hồi quy được thực hiện sớm hơn",
+          vi: " kiểm thử lại được thực hiện sau khi lỗi được sửa; kiểm thử hồi quy được thực hiện sớm hơn",
         },
       },
       {
-        text: "d) re-testing uses different environments, regression testing uses the same environment",
+        text: " re-testing uses different environments, regression testing uses the same environment",
         correct: false,
         translation: {
-          vi: "d) kiểm thử lại sử dụng các môi trường khác nhau, kiểm thử hồi quy sử dụng cùng một môi trường",
+          vi: " kiểm thử lại sử dụng các môi trường khác nhau, kiểm thử hồi quy sử dụng cùng một môi trường",
         },
       },
       {
-        text: "e) re-testing is done by developers, regression testing is done by independent testers",
+        text: " re-testing is done by developers, regression testing is done by independent testers",
         correct: false,
         translation: {
-          vi: "e) kiểm thử lại được thực hiện bởi nhà phát triển, kiểm thử hồi quy được thực hiện bởi các kiểm thử viên độc lập",
+          vi: " kiểm thử lại được thực hiện bởi nhà phát triển, kiểm thử hồi quy được thực hiện bởi các kiểm thử viên độc lập",
         },
       },
     ],
@@ -1023,29 +1023,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) only important in system testing",
+        text: " only important in system testing",
         correct: false,
-        translation: { vi: "a) chỉ quan trọng trong kiểm thử hệ thống" },
+        translation: { vi: " chỉ quan trọng trong kiểm thử hệ thống" },
       },
       {
-        text: "b) only used in component testing",
+        text: " only used in component testing",
         correct: false,
-        translation: { vi: "b) chỉ được sử dụng trong kiểm thử thành phần" },
+        translation: { vi: " chỉ được sử dụng trong kiểm thử thành phần" },
       },
       {
-        text: "c) never specified in advance",
+        text: " never specified in advance",
         correct: false,
-        translation: { vi: "c) không bao giờ được chỉ định trước" },
+        translation: { vi: " không bao giờ được chỉ định trước" },
       },
       {
-        text: "d) most useful when specified in advance",
+        text: " most useful when specified in advance",
         correct: true,
-        translation: { vi: "d) hữu ích nhất khi được chỉ định trước" },
+        translation: { vi: " hữu ích nhất khi được chỉ định trước" },
       },
       {
-        text: "e) derived from the code",
+        text: " derived from the code",
         correct: false,
-        translation: { vi: "e) bắt nguồn từ mã" },
+        translation: { vi: " bắt nguồn từ mã" },
       },
     ],
   },
@@ -1056,26 +1056,26 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) report on deviations from the project plan",
+        text: " report on deviations from the project plan",
         correct: false,
-        translation: { vi: "a) báo cáo về các sai lệch so với kế hoạch dự án" },
+        translation: { vi: " báo cáo về các sai lệch so với kế hoạch dự án" },
       },
       {
-        text: "b) sign the system off for release",
+        text: " sign the system off for release",
         correct: false,
-        translation: { vi: "b) ký duyệt hệ thống để phát hành" },
+        translation: { vi: " ký duyệt hệ thống để phát hành" },
       },
       {
-        text: "c) re-allocate resource to meet original plans",
+        text: " re-allocate resource to meet original plans",
         correct: true,
         translation: {
-          vi: "c) phân bổ lại nguồn lực để đáp ứng kế hoạch ban đầu",
+          vi: " phân bổ lại nguồn lực để đáp ứng kế hoạch ban đầu",
         },
       },
       {
-        text: "d) raise incidents on faults that they have found",
+        text: " raise incidents on faults that they have found",
         correct: false,
-        translation: { vi: "d) ghi nhận các sự cố về lỗi mà họ đã tìm thấy" },
+        translation: { vi: " ghi nhận các sự cố về lỗi mà họ đã tìm thấy" },
       },
     ],
   },
@@ -1086,29 +1086,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) code reviews",
+        text: " code reviews",
         correct: false,
-        translation: { vi: "a) xem xét mã" },
+        translation: { vi: " xem xét mã" },
       },
       {
-        text: "b) code inspections",
+        text: " code inspections",
         correct: false,
-        translation: { vi: "b) kiểm tra mã" },
+        translation: { vi: " kiểm tra mã" },
       },
       {
-        text: "c) a coverage tool",
+        text: " a coverage tool",
         correct: false,
-        translation: { vi: "c) một công cụ đo độ bao phủ" },
+        translation: { vi: " một công cụ đo độ bao phủ" },
       },
       {
-        text: "d) a test management tool",
+        text: " a test management tool",
         correct: false,
-        translation: { vi: "d) một công cụ quản lý kiểm thử" },
+        translation: { vi: " một công cụ quản lý kiểm thử" },
       },
       {
-        text: "e) a static analysis tool",
+        text: " a static analysis tool",
         correct: true,
-        translation: { vi: "e) một công cụ phân tích tĩnh" },
+        translation: { vi: " một công cụ phân tích tĩnh" },
       },
     ],
   },
@@ -1120,29 +1120,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) a dynamic analysis tool",
+        text: " a dynamic analysis tool",
         correct: false,
-        translation: { vi: "a) một công cụ phân tích động" },
+        translation: { vi: " một công cụ phân tích động" },
       },
       {
-        text: "b) a test execution tool",
+        text: " a test execution tool",
         correct: false,
-        translation: { vi: "b) một công cụ thực thi kiểm thử" },
+        translation: { vi: " một công cụ thực thi kiểm thử" },
       },
       {
-        text: "c) a debugging tool",
+        text: " a debugging tool",
         correct: false,
-        translation: { vi: "c) một công cụ gỡ lỗi" },
+        translation: { vi: " một công cụ gỡ lỗi" },
       },
       {
-        text: "d) a test management tool",
+        text: " a test management tool",
         correct: true,
-        translation: { vi: "d) một công cụ quản lý kiểm thử" },
+        translation: { vi: " một công cụ quản lý kiểm thử" },
       },
       {
-        text: "e) a configuration management tool",
+        text: " a configuration management tool",
         correct: false,
-        translation: { vi: "e) một công cụ quản lý cấu hình" },
+        translation: { vi: " một công cụ quản lý cấu hình" },
       },
     ],
   },
@@ -1154,29 +1154,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) how to fix the fault",
+        text: " how to fix the fault",
         correct: true,
-        translation: { vi: "a) cách sửa lỗi" },
+        translation: { vi: " cách sửa lỗi" },
       },
       {
-        text: "b) how to reproduce the fault",
+        text: " how to reproduce the fault",
         correct: false,
-        translation: { vi: "b) cách tái hiện lỗi" },
+        translation: { vi: " cách tái hiện lỗi" },
       },
       {
-        text: "c) test environment details",
+        text: " test environment details",
         correct: false,
-        translation: { vi: "c) chi tiết môi trường kiểm thử" },
+        translation: { vi: " chi tiết môi trường kiểm thử" },
       },
       {
-        text: "d) severity, priority",
+        text: " severity, priority",
         correct: false,
-        translation: { vi: "d) mức độ nghiêm trọng, ưu tiên" },
+        translation: { vi: " mức độ nghiêm trọng, ưu tiên" },
       },
       {
-        text: "e) the actual and expected outcomes",
+        text: " the actual and expected outcomes",
         correct: false,
-        translation: { vi: "e) kết quả thực tế và mong đợi" },
+        translation: { vi: " kết quả thực tế và mong đợi" },
       },
     ],
   },
@@ -1188,29 +1188,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) s = 4, t = 3, u = 2 and 5, v = 1",
+        text: " s = 4, t = 3, u = 2 and 5, v = 1",
         correct: false,
-        translation: { vi: "a) s = 4, t = 3, u = 2 và 5, v = 1" },
+        translation: { vi: " s = 4, t = 3, u = 2 và 5, v = 1" },
       },
       {
-        text: "b) s = 4 and 5, t = 3, u = 2, v = 1",
+        text: " s = 4 and 5, t = 3, u = 2, v = 1",
         correct: true,
-        translation: { vi: "b) s = 4 và 5, t = 3, u = 2, v = 1" },
+        translation: { vi: " s = 4 và 5, t = 3, u = 2, v = 1" },
       },
       {
-        text: "c) s = 1 and 5, t = 3, u = 2, v = 4",
+        text: " s = 1 and 5, t = 3, u = 2, v = 4",
         correct: false,
-        translation: { vi: "c) s = 1 và 5, t = 3, u = 2, v = 4" },
+        translation: { vi: " s = 1 và 5, t = 3, u = 2, v = 4" },
       },
       {
-        text: "d) s = 5, t = 4, u = 3, v = 1 and 2",
+        text: " s = 5, t = 4, u = 3, v = 1 and 2",
         correct: false,
-        translation: { vi: "d) s = 5, t = 4, u = 3, v = 1 và 2" },
+        translation: { vi: " s = 5, t = 4, u = 3, v = 1 và 2" },
       },
       {
-        text: "e) s = 4 and 5, t = 1, u = 2, v = 3",
+        text: " s = 4 and 5, t = 1, u = 2, v = 3",
         correct: false,
-        translation: { vi: "e) s = 4 và 5, t = 1, u = 2, v = 3" },
+        translation: { vi: " s = 4 và 5, t = 1, u = 2, v = 3" },
       },
     ],
   },
@@ -1221,29 +1221,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) business process-based testing",
+        text: " business process-based testing",
         correct: false,
-        translation: { vi: "a) kiểm thử dựa trên quy trình kinh doanh" },
+        translation: { vi: " kiểm thử dựa trên quy trình kinh doanh" },
       },
       {
-        text: "b) performance, load and stress testing",
+        text: " performance, load and stress testing",
         correct: false,
-        translation: { vi: "b) kiểm thử hiệu suất, tải và căng thẳng" },
+        translation: { vi: " kiểm thử hiệu suất, tải và căng thẳng" },
       },
       {
-        text: "c) requirements-based testing",
+        text: " requirements-based testing",
         correct: false,
-        translation: { vi: "c) kiểm thử dựa trên yêu cầu" },
+        translation: { vi: " kiểm thử dựa trên yêu cầu" },
       },
       {
-        text: "d) usability testing",
+        text: " usability testing",
         correct: false,
-        translation: { vi: "d) kiểm thử khả năng sử dụng" },
+        translation: { vi: " kiểm thử khả năng sử dụng" },
       },
       {
-        text: "e) top-down integration testing",
+        text: " top-down integration testing",
         correct: true,
-        translation: { vi: "e) kiểm thử tích hợp từ trên xuống" },
+        translation: { vi: " kiểm thử tích hợp từ trên xuống" },
       },
     ],
   },
@@ -1254,38 +1254,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) expected outcomes are defined by the software’s behaviour",
+        text: " expected outcomes are defined by the software’s behaviour",
         correct: true,
         translation: {
-          vi: "a) kết quả mong đợi được định nghĩa bởi hành vi của phần mềm",
+          vi: " kết quả mong đợi được định nghĩa bởi hành vi của phần mềm",
         },
       },
       {
-        text: "b) expected outcomes are derived from a specification, not from the code",
+        text: " expected outcomes are derived from a specification, not from the code",
         correct: false,
         translation: {
-          vi: "b) kết quả mong đợi được lấy từ một đặc tả, không phải từ mã",
+          vi: " kết quả mong đợi được lấy từ một đặc tả, không phải từ mã",
         },
       },
       {
-        text: "c) expected outcomes include outputs to a screen and changes to files and databases",
+        text: " expected outcomes include outputs to a screen and changes to files and databases",
         correct: false,
         translation: {
-          vi: "c) kết quả mong đợi bao gồm đầu ra lên màn hình và các thay đổi đối với tệp và cơ sở dữ liệu",
+          vi: " kết quả mong đợi bao gồm đầu ra lên màn hình và các thay đổi đối với tệp và cơ sở dữ liệu",
         },
       },
       {
-        text: "d) expected outcomes should be predicted before a test is run",
+        text: " expected outcomes should be predicted before a test is run",
         correct: false,
         translation: {
-          vi: "d) kết quả mong đợi nên được dự đoán trước khi chạy kiểm thử",
+          vi: " kết quả mong đợi nên được dự đoán trước khi chạy kiểm thử",
         },
       },
       {
-        text: "e) expected outcomes may include timing constraints such as response times",
+        text: " expected outcomes may include timing constraints such as response times",
         correct: false,
         translation: {
-          vi: "e) kết quả mong đợi có thể bao gồm các ràng buộc về thời gian như thời gian phản hồi",
+          vi: " kết quả mong đợi có thể bao gồm các ràng buộc về thời gian như thời gian phản hồi",
         },
       },
     ],
@@ -1297,29 +1297,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) ISO/IEC 12207",
+        text: " ISO/IEC 12207",
         correct: false,
-        translation: { vi: "a) ISO/IEC 12207" },
+        translation: { vi: " ISO/IEC 12207" },
       },
       {
-        text: "b) BS7925-1",
+        text: " BS7925-1",
         correct: true,
-        translation: { vi: "b) BS7925-1" },
+        translation: { vi: " BS7925-1" },
       },
       {
-        text: "c) BS7925-2",
+        text: " BS7925-2",
         correct: false,
-        translation: { vi: "c) BS7925-2" },
+        translation: { vi: " BS7925-2" },
       },
       {
-        text: "d) ANSI/IEEE 829",
+        text: " ANSI/IEEE 829",
         correct: false,
-        translation: { vi: "d) ANSI/IEEE 829" },
+        translation: { vi: " ANSI/IEEE 829" },
       },
       {
-        text: "e) ANSI/IEEE 729",
+        text: " ANSI/IEEE 729",
         correct: false,
-        translation: { vi: "e) ANSI/IEEE 729" },
+        translation: { vi: " ANSI/IEEE 729" },
       },
     ],
   },
@@ -1330,35 +1330,35 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Is not important",
+        text: " Is not important",
         correct: false,
-        translation: { vi: "a) Không quan trọng" },
+        translation: { vi: " Không quan trọng" },
       },
       {
-        text: "b) Increases as we move the product towards live use",
+        text: " Increases as we move the product towards live use",
         correct: true,
         translation: {
-          vi: "b) Tăng lên khi chúng ta đưa sản phẩm đến gần việc sử dụng thực tế",
+          vi: " Tăng lên khi chúng ta đưa sản phẩm đến gần việc sử dụng thực tế",
         },
       },
       {
-        text: "c) Decreases as we move the product towards live use",
+        text: " Decreases as we move the product towards live use",
         correct: false,
         translation: {
-          vi: "c) Giảm xuống khi chúng ta đưa sản phẩm đến gần việc sử dụng thực tế",
+          vi: " Giảm xuống khi chúng ta đưa sản phẩm đến gần việc sử dụng thực tế",
         },
       },
       {
-        text: "d) Is more expensive if found in requirements than functional design",
+        text: " Is more expensive if found in requirements than functional design",
         correct: false,
         translation: {
-          vi: "d) Đắt hơn nếu tìm thấy trong yêu cầu hơn là thiết kế chức năng",
+          vi: " Đắt hơn nếu tìm thấy trong yêu cầu hơn là thiết kế chức năng",
         },
       },
       {
-        text: "e) Can never be determined",
+        text: " Can never be determined",
         correct: false,
-        translation: { vi: "e) Không bao giờ có thể xác định được" },
+        translation: { vi: " Không bao giờ có thể xác định được" },
       },
     ],
   },
@@ -1370,31 +1370,31 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Test items (i.e. software versions)",
+        text: " Test items (i.e. software versions)",
         correct: false,
         translation: {
-          vi: "a) Các mục kiểm thử (tức là các phiên bản phần mềm)",
+          vi: " Các mục kiểm thử (tức là các phiên bản phần mềm)",
         },
       },
       {
-        text: "b) What is not to be tested",
+        text: " What is not to be tested",
         correct: false,
-        translation: { vi: "b) Những gì không được kiểm thử" },
+        translation: { vi: " Những gì không được kiểm thử" },
       },
       {
-        text: "c) Test environments",
+        text: " Test environments",
         correct: false,
-        translation: { vi: "c) Môi trường kiểm thử" },
+        translation: { vi: " Môi trường kiểm thử" },
       },
       {
-        text: "d) Quality plans",
+        text: " Quality plans",
         correct: true,
-        translation: { vi: "d) Các kế hoạch chất lượng" },
+        translation: { vi: " Các kế hoạch chất lượng" },
       },
       {
-        text: "e) Schedules and deadlines",
+        text: " Schedules and deadlines",
         correct: false,
-        translation: { vi: "e) Lịch trình và thời hạn" },
+        translation: { vi: " Lịch trình và thời hạn" },
       },
     ],
   },
@@ -1405,38 +1405,38 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) No, because they apply to development documentation",
+        text: " No, because they apply to development documentation",
         correct: false,
         translation: {
-          vi: "a) Không, vì chúng áp dụng cho tài liệu phát triển",
+          vi: " Không, vì chúng áp dụng cho tài liệu phát triển",
         },
       },
       {
-        text: "b) No, because they are normally applied before testing",
+        text: " No, because they are normally applied before testing",
         correct: false,
         translation: {
-          vi: "b) Không, vì chúng thường được áp dụng trước khi kiểm thử",
+          vi: " Không, vì chúng thường được áp dụng trước khi kiểm thử",
         },
       },
       {
-        text: "c) No, because they do not apply to the test documentation",
+        text: " No, because they do not apply to the test documentation",
         correct: false,
         translation: {
-          vi: "c) Không, vì chúng không áp dụng cho tài liệu kiểm thử",
+          vi: " Không, vì chúng không áp dụng cho tài liệu kiểm thử",
         },
       },
       {
-        text: "d) Yes, because both help detect faults and improve quality",
+        text: " Yes, because both help detect faults and improve quality",
         correct: true,
         translation: {
-          vi: "d) Có, vì cả hai đều giúp phát hiện lỗi và cải thiện chất lượng",
+          vi: " Có, vì cả hai đều giúp phát hiện lỗi và cải thiện chất lượng",
         },
       },
       {
-        text: "e) Yes, because testing includes all non-constructive activities",
+        text: " Yes, because testing includes all non-constructive activities",
         correct: false,
         translation: {
-          vi: "e) Có, vì kiểm thử bao gồm tất cả các hoạt động không mang tính xây dựng",
+          vi: " Có, vì kiểm thử bao gồm tất cả các hoạt động không mang tính xây dựng",
         },
       },
     ],
@@ -1448,29 +1448,29 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) Measuring response time",
+        text: " Measuring response time",
         correct: false,
-        translation: { vi: "a) Đo thời gian phản hồi" },
+        translation: { vi: " Đo thời gian phản hồi" },
       },
       {
-        text: "b) Measuring transaction rates",
+        text: " Measuring transaction rates",
         correct: false,
-        translation: { vi: "b) Đo tỷ lệ giao dịch" },
+        translation: { vi: " Đo tỷ lệ giao dịch" },
       },
       {
-        text: "c) Recovery testing",
+        text: " Recovery testing",
         correct: true,
-        translation: { vi: "c) Kiểm thử phục hồi" },
+        translation: { vi: " Kiểm thử phục hồi" },
       },
       {
-        text: "d) Simulating many users",
+        text: " Simulating many users",
         correct: false,
-        translation: { vi: "d) Mô phỏng nhiều người dùng" },
+        translation: { vi: " Mô phỏng nhiều người dùng" },
       },
       {
-        text: "e) Generating many transactions",
+        text: " Generating many transactions",
         correct: false,
-        translation: { vi: "e) Tạo ra nhiều giao dịch" },
+        translation: { vi: " Tạo ra nhiều giao dịch" },
       },
     ],
   },
@@ -1481,33 +1481,33 @@ export const questions = [
     },
     answers: [
       {
-        text: "a) As the first approach to deriving test cases",
+        text: " As the first approach to deriving test cases",
         correct: false,
         translation: {
-          vi: "a) Là cách tiếp cận đầu tiên để tạo ra các trường hợp kiểm thử",
+          vi: " Là cách tiếp cận đầu tiên để tạo ra các trường hợp kiểm thử",
         },
       },
       {
-        text: "b) After more formal techniques have been applied",
+        text: " After more formal techniques have been applied",
         correct: true,
         translation: {
-          vi: "b) Sau khi các kỹ thuật chính thức hơn đã được áp dụng",
+          vi: " Sau khi các kỹ thuật chính thức hơn đã được áp dụng",
         },
       },
       {
-        text: "c) By inexperienced testers",
+        text: " By inexperienced testers",
         correct: false,
-        translation: { vi: "c) Bởi những người kiểm thử thiếu kinh nghiệm" },
+        translation: { vi: " Bởi những người kiểm thử thiếu kinh nghiệm" },
       },
       {
-        text: "d) After the system has gone live",
+        text: " After the system has gone live",
         correct: false,
-        translation: { vi: "d) Sau khi hệ thống đã đi vào hoạt động" },
+        translation: { vi: " Sau khi hệ thống đã đi vào hoạt động" },
       },
       {
-        text: "e) Only by end users",
+        text: " Only by end users",
         correct: false,
-        translation: { vi: "e) Chỉ bởi người dùng cuối" },
+        translation: { vi: " Chỉ bởi người dùng cuối" },
       },
     ],
   },
