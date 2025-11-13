@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
   {
     question:
       "Which ONE of the following statements would you expect to be the MOST DIRECT advantage of the whole-team approach?",
@@ -1665,5 +1665,4 @@ const questions = [
     ],
   },
 ];
-console.log(questions.length);
 
