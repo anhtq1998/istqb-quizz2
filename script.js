@@ -207,11 +207,14 @@ function setNextQuestion() {
 
 // Hàm hiển thị câu hỏi và các lựa chọn trả lời
 function showQuestion(question) {
-  // Hiển thị thứ tự câu hỏi dựa trên vị trí của câu hỏi trong `selectedQuestions`
+  // Hiển thị thứ tự câu hỏi theo thứ tự hiển thị (Câu X/Y)
   let orderPrefix = "";
-  if (Array.isArray(selectedQuestions)) {
-    const pos = selectedQuestions.indexOf(question);
-    if (pos !== -1) orderPrefix = `${pos + 1}. `;
+  const total = Array.isArray(selectedQuestions) ? selectedQuestions.length : 0;
+  if (typeof currentQuestionIndex === "number" && currentQuestionIndex >= 0) {
+    orderPrefix =
+      total > 0
+        ? `Câu ${currentQuestionIndex + 1}/${total}: `
+        : `${currentQuestionIndex + 1}. `;
   }
 
   questionElement.innerText = `${orderPrefix}${question.question}`;
