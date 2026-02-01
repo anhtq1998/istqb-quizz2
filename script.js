@@ -204,7 +204,13 @@ function setNextQuestion() {
 
   showQuestion(nextQuestion);
 }
-
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 // Hàm hiển thị câu hỏi và các lựa chọn trả lời
 function showQuestion(question) {
   // Hiển thị thứ tự câu hỏi theo thứ tự hiển thị (Câu X/Y)
@@ -225,8 +231,8 @@ function showQuestion(question) {
 
   // Determine if question has multiple correct answers
   const multiCorrect = question.answers.filter((a) => a.correct).length > 1;
-
-  question.answers.forEach((answer, index) => {
+const shuffledAnswers = shuffleArray([...question.answers]);
+  shuffledAnswers.forEach((answer, index) => {
     const button = document.createElement("button");
     const option = String.fromCharCode(97 + index);
     button.innerText = `${option}. ${answer.text}`;
