@@ -1,6 +1,6 @@
 // KHAI BÁO BIẾN TOÀN CỤC CHỨA BỘ CÂU HỎI ĐÃ CHỌN
 let selectedQuestions = [];
-
+let currentShuffledAnswers = [];
 // Lấy tham chiếu đến các phần tử HTML MỚI (Dùng cho chức năng chọn Example)
 const exampleSelectionElement = document.getElementById("example-selection");
 const exampleSelect = document.getElementById("example-select");
@@ -231,8 +231,8 @@ function showQuestion(question) {
 
   // Determine if question has multiple correct answers
   const multiCorrect = question.answers.filter((a) => a.correct).length > 1;
-const shuffledAnswers = shuffleArray([...question.answers]);
-  shuffledAnswers.forEach((answer, index) => {
+currentShuffledAnswers = shuffleArray([...question.answers]);
+  currentShuffledAnswers.forEach((answer, index) => {
     const button = document.createElement("button");
     const option = String.fromCharCode(97 + index);
     button.innerText = `${option}. ${answer.text}`;
@@ -375,47 +375,33 @@ function clearStatusClass(element) {
 
 // Hàm bật/tắt bản dịch
 function toggleTranslation() {
-  // Get current question from usedQuestions array
   const currentQuestion = usedQuestions[usedQuestions.length - 1];
 
-  if (
-    !currentQuestion ||
-    !currentQuestion.translation ||
-    !currentQuestion.translation.vi
-  ) {
+  if (!currentQuestion || !currentQuestion.translation || !currentQuestion.translation.vi) {
     translatedQuestionElement.innerText = "Không có bản dịch cho câu hỏi này.";
     translatedQuestionElement.classList.remove("hide");
-    translatedAnswersElement.classList.add("hide");
-    translatedAnswersElement.innerText = "";
     return;
   }
 
-  // Nếu bản dịch đang ẩn (cả câu hỏi và câu trả lời)
   if (translatedQuestionElement.classList.contains("hide")) {
-    // HIỂN THỊ BẢN DỊCH CÂU HỎI
     translatedQuestionElement.innerText = `(Câu hỏi dịch): ${currentQuestion.translation.vi}`;
     translatedQuestionElement.classList.remove("hide");
 
-    // HIỂN THỊ BẢN DỊCH CÁC CÂU TRẢ LỜI
-    const translatedAnswers = currentQuestion.answers.map((answer, index) => {
+    // SỬ DỤNG currentShuffledAnswers THAY VÌ currentQuestion.answers
+    const translatedAnswers = currentShuffledAnswers.map((answer, index) => {
       const option = String.fromCharCode(97 + index);
       const translatedText =
         answer.translation && answer.translation.vi
           ? answer.translation.vi
-          : answer.text; // Dùng text gốc nếu không có dịch
+          : answer.text;
       return `${option}. ${translatedText}`;
     });
 
-    translatedAnswersElement.innerHTML = `(Đáp án dịch):<br>${translatedAnswers.join(
-      "<br>"
-    )}`;
+    translatedAnswersElement.innerHTML = `(Đáp án dịch):<br>${translatedAnswers.join("<br>")}`;
     translatedAnswersElement.classList.remove("hide");
   } else {
-    // Nếu bản dịch đang hiển thị, ẨN CẢ CÂU HỎI VÀ CÂU TRẢ LỜI
     translatedQuestionElement.classList.add("hide");
-    translatedQuestionElement.innerText = "";
     translatedAnswersElement.classList.add("hide");
-    translatedAnswersElement.innerText = "";
   }
 }
 
