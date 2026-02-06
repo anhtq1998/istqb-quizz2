@@ -20,6 +20,11 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const confirmButton = document.getElementById("confirm-btn");
 const logoContainer = document.querySelector(".logo-container");
 
+// New UI Elements
+const questionProgressElement = document.getElementById("question-progress");
+const scoreDisplayElement = document.getElementById("score-display");
+const progressBarFill = document.getElementById("progress-bar-fill");
+
 let availableQuestions, usedQuestions;
 let currentQuestionIndex;
 let score = 0;
@@ -176,6 +181,10 @@ function startGame() {
     questionContainerElement.removeChild(resultBox);
   }
 
+  // Reset Header UI
+  if (scoreDisplayElement) scoreDisplayElement.innerText = "0%";
+  if (progressBarFill) progressBarFill.style.width = "0%";
+
   setNextQuestion();
 }
 
@@ -213,17 +222,20 @@ function shuffleArray(array) {
 }
 // Hàm hiển thị câu hỏi và các lựa chọn trả lời
 function showQuestion(question) {
-  // Hiển thị thứ tự câu hỏi theo thứ tự hiển thị (Câu X/Y)
-  let orderPrefix = "";
+  // Update Header Progress
   const total = Array.isArray(selectedQuestions) ? selectedQuestions.length : 0;
-  if (typeof currentQuestionIndex === "number" && currentQuestionIndex >= 0) {
-    orderPrefix =
-      total > 0
-        ? `Câu ${currentQuestionIndex + 1}/${total}: `
-        : `${currentQuestionIndex + 1}. `;
+  if (questionProgressElement) {
+    questionProgressElement.innerText = `${currentQuestionIndex + 1}/${total}`;
+  }
+  
+  // Update Progress Bar
+  if (progressBarFill && total > 0) {
+    const progressPercent = ((currentQuestionIndex + 1) / total) * 100;
+    progressBarFill.style.width = `${progressPercent}%`;
   }
 
-  questionElement.innerText = `${orderPrefix}${question.question}`;
+  // Question Text (Removed Prefix)
+  questionElement.innerText = question.question;
 
   // Ẩn bản dịch ban đầu
   translatedQuestionElement.classList.add("hide");
@@ -321,6 +333,13 @@ function confirmAnswer() {
   // Tăng điểm và hiển thị trạng thái
   if (selectedIsExactlyCorrect) {
     score++;
+    // Update Score Display immediately
+    if (scoreDisplayElement) {
+        // Calculate percentage based on total selected questions
+        const total = selectedQuestions.length || 1;
+        const percent = Math.round((score / total) * 100);
+        scoreDisplayElement.innerText = `${percent}%`;
+    }
   } else {
     // <== THÊM LOGIC NÀY KHI TRẢ LỜI SAI
     const currentQuestion = usedQuestions[usedQuestions.length - 1];
@@ -338,6 +357,8 @@ function confirmAnswer() {
       btn.classList.add("correct");
     } else if (btn.classList.contains("selected")) {
       btn.classList.add("wrong");
+    } else {
+      btn.classList.add("neutral");
     }
   });
 

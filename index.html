@@ -10,10 +10,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="styles.css" rel="stylesheet">
+  <!-- Rounded font for the new UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
   <title>Quiz App Custom</title>
 
 
-  <script async src="https:<!--www.googletagmanager.com/gtag/js?id=G-SLS7B2YQFD"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLS7B2YQFD"></script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,59 +31,105 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="logo-container">
-      <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
-    </div>
+  <div class="main-wrapper">
+    <!-- <div class="app-header">
+      <h1>Play</h1>
+      <p>Solo or with a group</p>
+    </div> -->
 
-    <div id="example-selection" class="example-controls">
-      <h2>Chọn Bộ Câu Hỏi:</h2>
-      <select id="example-select">
-        <option value="" disabled selected>-- Chọn Example --</option>
-        <!--<option value="example1">Example 1 (40 câu)</option>-->
-        <!--<option value="example2">Example 2 (40 câu)</option>-->
-        <!--<option value="example3">Example 3 (45 câu Basic)</option>-->
-        <!--<option value="example4">Example 4 (45 câu)</option>-->
-        <!--<option value="example5">Example 5 (50 câu)</option>-->
-        <!--<option value="example6">Example 6 (50 câu)</option>-->
-        <!--<option value="example7">Example 7 (50 câu)</option>-->
-        <!--<option value="example8">Example 8 (40 câu)</option>-->
-        <!--<option value="example9">Example 9 (51 câu)</option-->
-        <!--<option value="example10">Đề tổng hợp (72 câu)</option>-->
-        <!--<option value="example11">Đề v4 phần 1 (37 câu)</option>-->
-        <option value="example12">Example mới 12 (50 câu)</option>
-        <option value="example13">Đề thi mẫu (40 câu)</option>
-        <option value="example14">Đề thi mẫu số 2 (40 câu)</option>
-        <option value="example15">Đề thi mẫu số 3 (40 câu)</option>
-        <option value="example16">Đề thi mẫu số 4 (40 câu)</option>
-        <option value="example17">Đề thi mẫu số 5 (40 câu)</option>
-        <option value="example18">Đề thi mẫu số 6 (40 câu)</option>
-        <option value="example19">Đề thi mẫu số 7 (40 câu)</option>
-        <option value="example20">Đề thi mẫu số 8 (40 câu)</option>
-        <option value="example21">Đề thi mẫu số 9 (40 câu)</option>
-        <option value="retry_incorrect">Làm lại câu đã sai (Lưu gần nhất)</option>
-        <!-- <option value="example2">Example 2 (Advanced)</option> -->
-      </select>
-      <button id="load-example-btn" class="btn">Tải Bộ Câu Hỏi</button>
-    </div>
+    <div class="container">
+      <!-- Status Bar Area (Inside Card) -->
+      <div class="quiz-header">
+        <div class="header-left">
+          <button class="icon-btn settings-icon" aria-label="Settings">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.51 1H7.5a2 2 0 01-2-2 2 2 0 012-2h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H15a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.51-1h.09a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1zM4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8-8-3.582-8-8z"
+                fill="white" />
+            </svg>
+          </button>
+          <span id="question-progress" class="status-text">1/40</span>
+        </div>
 
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+        <div class="header-right">
+          <span id="score-display" class="status-text">042420</span>
+          <button class="icon-btn close-icon" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 6L18 18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div id="translated-question" class="hide translated-text"></div>
-      <div id="translated-answers" class="hide translated-text"></div>
-    </div>
 
-    <div class="controls">
-      <button id="start-btn" class="start-btn btn hide">Start</button>
-      <button id="translate-btn" class="translate-btn btn hide">Dịch</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-      <button id="confirm-btn" class="confirm-btn btn hide">Confirm</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        <div class="timer-float-icon">
+          <div class="timer-circle"></div>
+        </div>
+      </div>
+
+
+
+      <div id="example-selection" class="example-controls">
+        <div class="logo-container">
+          <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
+        </div>
+        <h2>Chọn Bộ Câu Hỏi:</h2>
+        <select id="example-select">
+          <option value="" disabled selected>-- Chọn Example --</option>
+          <!--<option value="example1">Example 1 (40 câu)</option>-->
+          <!--<option value="example2">Example 2 (40 câu)</option>-->
+          <!--<option value="example3">Example 3 (45 câu Basic)</option>-->
+          <!--<option value="example4">Example 4 (45 câu)</option>-->
+          <!--<option value="example5">Example 5 (50 câu)</option>-->
+          <!--<option value="example6">Example 6 (50 câu)</option>-->
+          <!--<option value="example7">Example 7 (50 câu)</option>-->
+          <!--<option value="example8">Example 8 (40 câu)</option>-->
+          <!--<option value="example9">Example 9 (51 câu)</option-->
+          <!--<option value="example10">Đề tổng hợp (72 câu)</option>-->
+          <!--<option value="example11">Đề v4 phần 1 (37 câu)</option>-->
+          <option value="example12">Example mới 12 (50 câu)</option>
+          <option value="example13">Đề thi mẫu (40 câu)</option>
+          <option value="example14">Đề thi mẫu số 2 (40 câu)</option>
+          <option value="example15">Đề thi mẫu số 3 (40 câu)</option>
+          <option value="example16">Đề thi mẫu số 4 (40 câu)</option>
+          <option value="example17">Đề thi mẫu số 5 (40 câu)</option>
+          <option value="example18">Đề thi mẫu số 6 (40 câu)</option>
+          <option value="example19">Đề thi mẫu số 7 (40 câu)</option>
+          <option value="example20">Đề thi mẫu số 8 (40 câu)</option>
+          <option value="example21">Đề thi mẫu số 9 (40 câu)</option>
+          <option value="retry_incorrect">Làm lại câu đã sai (Lưu gần nhất)</option>
+          <!-- <option value="example2">Example 2 (Advanced)</option> -->
+        </select>
+        <button id="load-example-btn" class="btn">Tải Bộ Câu Hỏi</button>
+      </div>
+
+      <div id="question-container" class="hide">
+        <div class="question-box">
+          <div id="question">Question</div>
+          <div id="translated-question" class="hide translated-text"></div>
+        </div>
+
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+
+        <div id="translated-answers" class="hide translated-text"></div>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn hide">Start</button>
+        <button id="translate-btn" class="translate-btn btn hide">Dịch</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <button id="confirm-btn" class="confirm-btn btn hide">Confirm</button>
+      </div>
     </div>
   </div>
 </body>

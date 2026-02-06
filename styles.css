@@ -1,196 +1,339 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  font-family: Gotham Rounded;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 :root {
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
+    --bg-color: #562a55;
+    --card-bg: #ffffff;
+    --header-bg: #2a0c28;
+    --question-bg: #4c244b;
+    --text-main: #ffffff;
+
+    --btn-color-1: #3d76ba;
+    --btn-color-2: #2fa8b1;
+    --btn-color-3: #f0aa2b;
+    --btn-color-4: #d75a70;
+
+    /* Status colors */
+    --correct: #4CAF50;
+    --wrong: #e57373;
 }
 
 body {
-  --hue: var(--hue-neutral);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: white;
+    overflow: hidden;
+    /* Prevent body scroll if possible */
 }
 
-body.correct {
-  --hue: var(--hue-correct);
+/* Application Header (Play title) */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
-body.wrong {
-  --hue: var(--hue-wrong);
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.app-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.app-header p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* Card Container */
 .container {
-  width: 800px;
-  max-width: 80%;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 0 10px 2px;
-  /* Allow vertical scrolling when content exceeds the container height */
-  max-height: 80vh;
-  /* keep container within viewport */
-  overflow-y: auto;
-  /* enable vertical scroll */
-  -webkit-overflow-scrolling: touch;
-  /* smooth scrolling on iOS */
+    width: 400px;
+    /* Mobile width usually around 375-414px */
+    max-width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    color: #333;
+    /* Default text color inside card */
+}
+
+/* Quiz Header Bar */
+.quiz-header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.status-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    height: 8px;
+    background-color: #ddd;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, #d5546d, #efa929, #4caf50);
+    width: 0%;
+    /* Dynamic */
+    transition: width 0.3s ease;
+    border-radius: 0 4px 4px 0;
+}
+
+.timer-float-icon {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    /* Implied timer circle from image */
+}
+
+/* Logo & Example Selection Area */
+.example-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .logo-container {
-  text-align: center;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .logo-image {
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    border-radius: 50%;
+    /* Circle logo possibly? */
 }
 
+h2 {
+    color: #333;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Question Area */
+#question-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: whitesmoke;
+    /* Light gray bg behind question */
+}
+
+.question-box {
+    background-color: var(--question-bg);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Answer Buttons */
 .btn-grid {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  /* Sửa đổi dòng này */
-  gap: 10px;
-  margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 .btn {
-  --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50%);
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: white;
-  outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s;
+    text-align: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    /* 3D effect */
+    position: relative;
+    top: 0;
 }
 
-.btn:hover {
-  border-color: black;
+.btn:active {
+    top: 4px;
+    box-shadow: none;
 }
 
-.btn.correct::after {
-  content: " ✓";
-  color: #4CAF50;
-  font-weight: bold;
-  margin-left: 8px;
+/* Specific colors for first 4 children if possible, otherwise cycling */
+.btn-grid .btn:nth-child(1) {
+    background-color: var(--btn-color-1);
+    box-shadow: 0 4px 0 #2a5a9e;
+}
+
+.btn-grid .btn:nth-child(2) {
+    background-color: var(--btn-color-2);
+    box-shadow: 0 4px 0 #1f8a96;
+}
+
+.btn-grid .btn:nth-child(3) {
+    background-color: var(--btn-color-3);
+    box-shadow: 0 4px 0 #d9961d;
+}
+
+.btn-grid .btn:nth-child(4) {
+    background-color: var(--btn-color-4);
+    box-shadow: 0 4px 0 #b33952;
+}
+
+/* If more buttons, cycle or default */
+.btn-grid .btn:nth-child(n+5) {
+    background-color: #777;
+    box-shadow: 0 4px 0 #555;
+}
+
+/* Control Buttons (Start, Next, etc) */
+.controls {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls .btn {
+    background-color: #333;
+    box-shadow: 0 4px 0 #000;
+}
+
+.controls .btn.hide {
+    display: none;
+}
+
+/* Utility Classes */
+.hide {
+    display: none !important;
+}
+
+/* Correct/Wrong Logic Styles */
+.btn.correct {
+    background-color: var(--correct) !important;
+    box-shadow: 0 4px 0 #388e3c !important;
+    color: white !important;
 }
 
 .btn.wrong {
-  --hue: var(--hue-wrong);
-  /* red background for wrong answers */
-  background-color: #e57373;
-  border-color: #d32f2f;
-  color: #000;
+    background-color: var(--wrong) !important;
+    box-shadow: 0 4px 0 #d32f2f !important;
+    color: white !important;
 }
 
-.translate-btn {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.start-btn,
-.next-btn {
-  font-weight: bold;
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.hide {
-  display: none;
-}
-
-.translate-btn {
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-/* Selected answer visual state */
 .btn.selected {
-  background-color: #ff9800;
-  /* orange */
-  border-color: #e68900;
-  /* darker orange border */
-  color: #000;
-  /* black text for contrast */
-  outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) inset;
+    outline: 4px solid white;
+    /* Maybe a border highlight? */
+    transform: scale(1.02);
 }
 
-/* Correct answer checkmark */
-.btn.correct {
-  background-color: white !important;
-  color: black !important;
-  border: 1px solid #ccc;
-  box-shadow: none;
+/* Translation Text */
+.translated-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    /* Lighter text for translation on dark bg */
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 5px;
+    width: 100%;
 }
 
-.btn.correct::after {
-  content: " ✓";
-  color: #4CAF50;
-  font-weight: bold;
-  margin-left: 8px;
+#translated-answers {
+    color: #555;
+    /* Dark text for translation on light bg (if outside) */
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-/* Disabled button state (after confirmation) */
-.btn[disabled],
-.btn[aria-disabled="true"] {
-  pointer-events: none;
-  cursor: default;
+#load-example-btn {
+    background-color: yellowgreen;
 }
 
-/* Custom scrollbar styling for the container */
-.container {
-  /* Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+.btn.neutral {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 4px 0 #ccc !important;
+    opacity: 0.7;
 }
 
-.container::-webkit-scrollbar {
-  width: 10px;
-}
-
-.container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.container::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  border: 2px solid transparent;
-  /* gives some padding effect */
-}
-
-#example-selection {
-  width: 100%;
-  text-align: center !important;
-}
-
-#example-select {
-  height: 28px;
-  border-radius: 8px;
-}
-
-@media (max-width: 800px) {
-  #load-example-btn {
-    margin-top: 15px !important;
-  }
+/* Responsive tweaks */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
 }
