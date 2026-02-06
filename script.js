@@ -3,7 +3,8 @@ let selectedQuestions = [];
 let currentShuffledAnswers = [];
 // Lấy tham chiếu đến các phần tử HTML MỚI (Dùng cho chức năng chọn Example)
 const exampleSelectionElement = document.getElementById("example-selection");
-const exampleSelect = document.getElementById("example-select");
+// Update reference to HIDDEN input used for logic
+const exampleSelect = document.getElementById("example-select"); 
 const loadExampleBtn = document.getElementById("load-example-btn");
 
 // Lấy tham chiếu đến các phần tử HTML ĐÃ CÓ (Dùng cho Quiz)
@@ -30,6 +31,52 @@ let currentQuestionIndex;
 let score = 0;
 let totalQuestions = 0;
 let incorrectQuestions = [];
+
+// ==========================================
+// CUSTOM DROPDOWN LOGIC
+// ==========================================
+document.addEventListener("DOMContentLoaded", function() {
+    const customSelectWrapper = document.querySelector('.custom-select-wrapper');
+    const customSelect = customSelectWrapper.querySelector('.custom-select');
+    const customSelectTrigger = customSelectWrapper.querySelector('.custom-select-trigger');
+    const customOptions = customSelectWrapper.querySelectorAll('.custom-option');
+    const hiddenInput = document.getElementById("example-select");
+
+    // Toggle Dropdown
+    customSelectTrigger.addEventListener('click', function() {
+        customSelect.classList.toggle('open');
+    });
+
+    // Handle Option Selection
+    customOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const value = this.getAttribute('data-value');
+            const text = this.textContent;
+
+            // Update Trigger Text
+            customSelectTrigger.textContent = text;
+
+            // Update Hidden Input Value
+            hiddenInput.value = value;
+
+            // Update UI State
+            customOptions.forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            // Close Dropdown
+            customSelect.classList.remove('open');
+            
+            console.log("Selected:", value);
+        });
+    });
+
+    // Close Dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!customSelectWrapper.contains(e.target)) {
+            customSelect.classList.remove('open');
+        }
+    });
+});
 
 // Gắn sự kiện cho nút tải example VÀ CÁC NÚT KHÁC
 loadExampleBtn.addEventListener("click", loadSelectedExample);
@@ -146,7 +193,13 @@ function startGame() {
 
     // Xóa bộ câu hỏi đã chọn để buộc người dùng chọn lại
     selectedQuestions = [];
-    exampleSelect.value = ""; // Đặt lại dropdown
+    exampleSelect.value = ""; // Đặt lại dropdown value
+    
+    // Reset Custom Dropdown UI
+    const customSelectTrigger = document.querySelector('.custom-select-trigger');
+    const customOptions = document.querySelectorAll('.custom-option');
+    if(customSelectTrigger) customSelectTrigger.textContent = "-- Chọn Example --";
+    if(customOptions) customOptions.forEach(opt => opt.classList.remove('selected'));
 
     return; // Dừng hàm, đã quay về trang chủ
   }

@@ -163,13 +163,128 @@ h2 {
     color: #333;
 }
 
-select {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
+/* Custom Select Styles */
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 70%;
     margin-bottom: 15px;
+}
+
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select-trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* Bold text for better visibility */
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.custom-select-trigger:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    /* Arrow */
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.custom-select.open .custom-select-trigger:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    /* Below trigger */
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 100;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    max-height: 250px;
+    /* Limit height */
+    overflow-y: auto;
+    /* Scrollable inside */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    margin-top: 5px;
+    /* Spacing */
+    border-radius: 8px;
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.custom-option:last-child {
+    border-bottom: none;
+}
+
+.custom-option:hover,
+.custom-option.selected {
+    background-color: #f2f2f2;
+    color: var(--btn-color-2);
+    /* Highlight color */
+    font-weight: bold;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* Question Area */

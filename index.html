@@ -79,32 +79,28 @@
           <img src="img/quby-cute.gif" alt="Thi Tot Logo Animated" class="logo-image">
         </div>
         <h2>Chọn Bộ Câu Hỏi:</h2>
-        <select id="example-select">
-          <option value="" disabled selected>-- Chọn Example --</option>
-          <!--<option value="example1">Example 1 (40 câu)</option>-->
-          <!--<option value="example2">Example 2 (40 câu)</option>-->
-          <!--<option value="example3">Example 3 (45 câu Basic)</option>-->
-          <!--<option value="example4">Example 4 (45 câu)</option>-->
-          <!--<option value="example5">Example 5 (50 câu)</option>-->
-          <!--<option value="example6">Example 6 (50 câu)</option>-->
-          <!--<option value="example7">Example 7 (50 câu)</option>-->
-          <!--<option value="example8">Example 8 (40 câu)</option>-->
-          <!--<option value="example9">Example 9 (51 câu)</option-->
-          <!--<option value="example10">Đề tổng hợp (72 câu)</option>-->
-          <!--<option value="example11">Đề v4 phần 1 (37 câu)</option>-->
-          <option value="example12">Example mới 12 (50 câu)</option>
-          <option value="example13">Đề thi mẫu (40 câu)</option>
-          <option value="example14">Đề thi mẫu số 2 (40 câu)</option>
-          <option value="example15">Đề thi mẫu số 3 (40 câu)</option>
-          <option value="example16">Đề thi mẫu số 4 (40 câu)</option>
-          <option value="example17">Đề thi mẫu số 5 (40 câu)</option>
-          <option value="example18">Đề thi mẫu số 6 (40 câu)</option>
-          <option value="example19">Đề thi mẫu số 7 (40 câu)</option>
-          <option value="example20">Đề thi mẫu số 8 (40 câu)</option>
-          <option value="example21">Đề thi mẫu số 9 (40 câu)</option>
-          <option value="retry_incorrect">Làm lại câu đã sai (Lưu gần nhất)</option>
-          <!-- <option value="example2">Example 2 (Advanced)</option> -->
-        </select>
+        <!-- Custom Dropdown Structure -->
+        <div class="custom-select-wrapper">
+          <div class="custom-select" id="custom-select">
+            <div class="custom-select-trigger">-- Chọn Example --</div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="">-- Chọn Example --</span>
+              <span class="custom-option" data-value="example12">Example mới 12 (50 câu)</span>
+              <span class="custom-option" data-value="example13">Đề thi mẫu (40 câu)</span>
+              <span class="custom-option" data-value="example14">Đề thi mẫu số 2 (40 câu)</span>
+              <span class="custom-option" data-value="example15">Đề thi mẫu số 3 (40 câu)</span>
+              <span class="custom-option" data-value="example16">Đề thi mẫu số 4 (40 câu)</span>
+              <span class="custom-option" data-value="example17">Đề thi mẫu số 5 (40 câu)</span>
+              <span class="custom-option" data-value="example18">Đề thi mẫu số 6 (40 câu)</span>
+              <span class="custom-option" data-value="example19">Đề thi mẫu số 7 (40 câu)</span>
+              <span class="custom-option" data-value="example20">Đề thi mẫu số 8 (40 câu)</span>
+              <span class="custom-option" data-value="example21">Đề thi mẫu số 9 (40 câu)</span>
+              <span class="custom-option" data-value="retry_incorrect">Làm lại câu đã sai (Lưu gần nhất)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Hidden input to store value -->
+        <input type="hidden" id="example-select" value="">
         <button id="load-example-btn" class="btn">Tải Bộ Câu Hỏi</button>
       </div>
 
