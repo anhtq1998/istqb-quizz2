@@ -147,6 +147,7 @@ function loadSelectedExample() {
       // Ẩn phần chọn example và hiện nút Start
       exampleSelectionElement.classList.add("hide");
       document.querySelector(".logo-container").classList.add("hide");
+      document.querySelector(".controls").classList.add("ready-mode"); // Center button
       startButton.classList.remove("hide");
       startButton.innerText = "Em sẵn sàng";
       alert("Tải bộ câu hỏi thành công! Nhấn Sẵn sàng để làm bài.");
@@ -215,6 +216,7 @@ function startGame() {
   }
 
   startButton.classList.add("hide");
+  document.querySelector(".controls").classList.remove("ready-mode"); // Reset layout
   // Hiển thị lại phần câu hỏi và câu trả lời
   questionElement.classList.remove("hide");
   answerButtonsElement.classList.remove("hide");

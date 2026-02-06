@@ -388,6 +388,14 @@ h2 {
     display: none;
 }
 
+/* Centering mode for Start Button */
+.controls.ready-mode {
+    flex: 1;
+    align-items: center;
+    background-color: transparent;
+    /* Seamless look */
+}
+
 /* Utility Classes */
 .hide {
     display: none !important;
@@ -455,5 +463,10 @@ h2 {
         height: 100%;
         max-height: none;
         border-radius: 0;
+    }
+
+    .controls {
+        padding-bottom: 60px;
+        /* Lift controls up on mobile */
     }
 }
