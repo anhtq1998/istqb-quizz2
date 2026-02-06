@@ -402,6 +402,15 @@ h2 {
 }
 
 /* Correct/Wrong Logic Styles */
+.btn.selected {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 4px 0 #ccc !important;
+    transform: scale(1.02);
+    /* Neutral look for selected but not verified */
+    z-index: 10;
+}
+
 .btn.correct {
     background-color: var(--correct) !important;
     box-shadow: 0 4px 0 #388e3c !important;
@@ -414,11 +423,7 @@ h2 {
     color: white !important;
 }
 
-.btn.selected {
-    outline: 4px solid white;
-    /* Maybe a border highlight? */
-    transform: scale(1.02);
-}
+/* Removed old .btn.selected from here */
 
 /* Translation Text */
 .translated-text {
