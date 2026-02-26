@@ -140,7 +140,7 @@ export const questions = [
   {
     id: 6,
     question: "What is a Test Case?",
-    translation: { vi: "Kịch bản kiểm thử là gì?" },
+    translation: { vi: "Trường hợp kiểm thử (Test Case) là gì?" },
     answers: [
       {
         text: "Set of inputs, execution conditions and expected results",
@@ -152,7 +152,7 @@ export const questions = [
       {
         text: "A bug report",
         correct: false,
-        translation: { vi: "Báo cáo lỗi" },
+        translation: { vi: "Báo cáo lỗi (bug report)" },
       },
       {
         text: "Only automated scripts",

@@ -69,7 +69,7 @@ export const questions = [
   {
     id: 4,
     question: "A smoke test is used to:",
-    translation: { vi: "Kiểm thử smoke được dùng để:" },
+    translation: { vi: "Kiểm thử khói (Smoke test) được dùng để:" },
     answers: [
       {
         text: "Confirm basic functionality works after a build",
@@ -84,7 +84,7 @@ export const questions = [
       {
         text: "Replace full regression test",
         correct: false,
-        translation: { vi: "Thay thế toàn bộ regression" },
+        translation: { vi: "Thay thế toàn bộ kiểm thử hồi quy" },
       },
       {
         text: "Verify UI aesthetics",
@@ -96,12 +96,14 @@ export const questions = [
   {
     id: 5,
     question: "Which is the best definition of testability?",
-    translation: { vi: "Định nghĩa tốt nhất về khả năng kiểm thử là gì?" },
+    translation: {
+      vi: "Định nghĩa tốt nhất về khả năng kiểm thử (testability) là gì?",
+    },
     answers: [
       {
         text: "Extent to which tests can reveal faults",
         correct: true,
-        translation: { vi: "Mức độ kiểm thử có thể phát hiện lỗi" },
+        translation: { vi: "Mức độ kiểm thử có thể phát hiện lỗi/khuyết tật" },
       },
       {
         text: "Number of test cases per feature",

@@ -2,7 +2,9 @@ export const questions = [
   {
     id: 1,
     question: "Which of the following best describes a test scenario?",
-    translation: { vi: "Mô tả nào phù hợp nhất về một kịch bản kiểm thử?" },
+    translation: {
+      vi: "Mô tả nào phù hợp nhất về một kịch bản kiểm thử (Test Scenario)?",
+    },
     answers: [
       {
         text: "High-level description of what to test",
@@ -12,7 +14,7 @@ export const questions = [
       {
         text: "A single defect report",
         correct: false,
-        translation: { vi: "Một báo cáo lỗi" },
+        translation: { vi: "Một báo cáo khiếm khuyết (defect)" },
       },
       {
         text: "A configuration script",
@@ -29,7 +31,9 @@ export const questions = [
   {
     id: 2,
     question: "When should regression tests be executed?",
-    translation: { vi: "Khi nào nên thực hiện regression tests?" },
+    translation: {
+      vi: "Khi nào nên thực hiện kiểm thử hồi quy (regression tests)?",
+    },
     answers: [
       {
         text: "Whenever the software or its environment changes",

@@ -8,7 +8,9 @@ export const questions = [
       {
         text: "Finding defects and failures.",
         correct: true,
-        translation: { vi: "Tìm kiếm khuyết tật và lỗi hỏng." },
+        translation: {
+          vi: "Tìm kiếm khiếm khuyết (defects) và hư hỏng (failures).",
+        },
       },
       {
         text: "Proving that the software is 100% bug-free.",
@@ -63,21 +65,21 @@ export const questions = [
     id: 3,
     question: "What is the difference between an error and a defect?",
     translation: {
-      vi: "Sự khác biệt giữa lỗi (error) và khuyết tật (defect) là gì?",
+      vi: "Sự khác biệt giữa sai lầm (error) và khiếm khuyết (defect) là gì?",
     },
     answers: [
       {
         text: "An error is made by a person; a defect is a flaw in the system.",
         correct: true,
         translation: {
-          vi: "Lỗi do con người tạo ra; khuyết tật là một sai sót trong hệ thống.",
+          vi: "Sai lầm (error) do con người tạo ra; khiếm khuyết (defect) là một khiếm khuyết trong hệ thống.",
         },
       },
       {
         text: "A defect is made by a person; an error is a flaw in the system.",
         correct: false,
         translation: {
-          vi: "Khuyết tật do con người tạo ra; lỗi là một sai sót trong hệ thống.",
+          vi: "Khiếm khuyết do con người tạo ra; sai lầm là một sai sót trong hệ thống.",
         },
       },
       {
@@ -89,7 +91,7 @@ export const questions = [
         text: "An error causes a failure; a defect is the result of a failure.",
         correct: false,
         translation: {
-          vi: "Lỗi gây ra thất bại; khuyết tật là kết quả của thất bại.",
+          vi: "Sai lầm gây ra hư hỏng; khiếm khuyết là kết quả của hư hỏng.",
         },
       },
     ],
@@ -127,7 +129,7 @@ export const questions = [
   {
     id: 5,
     question: "Exhaustive testing is...",
-    translation: { vi: "Kiểm thử kiệt quệ (toàn bộ) là..." },
+    translation: { vi: "Kiểm thử vét cạn (Exhaustive testing) là..." },
     answers: [
       {
         text: "Impossible for all but trivial cases.",

@@ -11,7 +11,7 @@ export const questions = [
         text: "A change has introduced a new defect in an unchanged area.",
         correct: true,
         translation: {
-          vi: "Một thay đổi đã tạo ra lỗi mới trong một khu vực không thay đổi.",
+          vi: "Một thay đổi đã tạo ra khiếm khuyết (defect) mới trong một khu vực không thay đổi.",
         },
       },
       {
@@ -101,7 +101,7 @@ export const questions = [
   {
     id: 4,
     question: "What is a 'Failure'?",
-    translation: { vi: "Thất bại (Failure) là gì?" },
+    translation: { vi: "Hư hỏng/Sự cố (Failure) là gì?" },
     answers: [
       {
         text: "A deviation of the software from its expected delivery or service.",
@@ -136,7 +136,7 @@ export const questions = [
         text: "Identify the reason for defects to prevent them from recurring.",
         correct: true,
         translation: {
-          vi: "Xác định nguyên nhân gây lỗi để ngăn chúng tái diễn.",
+          vi: "Xác định nguyên nhân gây khiếm khuyết (defects) để ngăn chúng tái diễn.",
         },
       },
       {
